@@ -670,12 +670,37 @@
 	margin-top: 10px;
 	margin-bottom: 5px;
 }
-
-.advantages_two.liblue span  {
-	margin-bottom: 60px;
-	max-height: 26px;
-	border-radius: 5px;
+.advantages_two.liblue{
+	counter-reset: item;
+}
+.advantages_two.liblue:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+.advantages_two.liblue li span{
+	position: relative;
+	background: none;
+	padding: 0 13px;
+	margin-right: 15px;
+	margin-top: 13px;
+}
+.advantages_two.liblue li span:before{
+	content: counter(item);
+	position: absolute;
+	text-align: center;
+	top: 0;
+	left: 0;
+	width: 28px;
+	height: 30px;
 	background-color: #A9C1E0;
+	counter-increment: item;
+	color: #fff;
+	display: block;
+	border-radius: 2px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 0 0 0;
 }
 .advantages_two.liblue ul li p {
 	padding-top: 6px;
@@ -910,6 +935,9 @@
 }
 .clearfl {clear: both;}
 section.bread { height: 42px; background: #f6f8fa; }
+ul.breadcrumbs{
+	overflow: hidden !important;
+}
 ul.breadcrumbs li {
     list-style-type: none;
     float: left;
@@ -933,6 +961,7 @@ ul.breadcrumbs li {
 .pybox.ic1 {background: url(../img/py_1.png) no-repeat left center;}
 .pybox.ic2 {background: url(../img/py_2.png) no-repeat left center;}
 .pybox.ic3 {background: url(../img/py_3.png) no-repeat left center;}
+
 ul.breadcrumbs li.ic_home {background: none}
 ul.breadcrumbs li.ic_home a {
     background: url(../img/li_ic_h.png) no-repeat center top;
@@ -1290,7 +1319,7 @@ section.steps h1 {text-align: center; color: #fff; font-size: 28px; text-transfo
     margin-top: 40px;
 }
 .boxtxt_a_b {    margin-top: 80px;}
-.boxtxt_a_b h2 {font-size: 36px; line-height: 43px;}
+.boxtxt_a_b h2 {font-size: 36px; line-height: 43px; color: #202020; text-align: left;}
 .boxtxt_a_b a.morelnk {font-size: 20px; color: #50678b; background: url(../img/lnk_ic_a_b.png) no-repeat right center; padding-right: 35px; top:30px; position: relative;}
 
 .bitboxtwo {background: #f1f4f8; min-height: 300px; border-top:2px solid #d8dbdf; padding-bottom: 20px; padding-top: 80px;}
@@ -1363,7 +1392,7 @@ section.bgnimf {background: #e3e9f1; padding:20px 0px; }
     display: inline;
 }
 .ctlnkbox {
-    padding: 36px 20px;
+    padding: 36px 0;
 }
 .complinfbox {
 	font-family: 'Open Sans', sans-serif;
@@ -1826,7 +1855,6 @@ a.readm { font-size: 17px; color: #74c67f; text-decoration: underline; top: 40px
 .maptabs .tabs__content {padding-top:0px;}
 
 .advantages_two.liblue span  {
-	margin-bottom: 60px;
 	border-radius: 5px;
 	background-color: #A9C1E0;
 }

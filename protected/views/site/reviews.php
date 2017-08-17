@@ -7,6 +7,7 @@
 	<div class="row">
 			<ul class="breadcrumbs">
 				<li class="ic_home"><a href="/"></a></li>
+				<div class="sprt"></div>
 				<li><a href="/reviews">Отзывы</a></li>
 				<div class="sprt"></div>
 			</ul>

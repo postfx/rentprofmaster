@@ -11,6 +11,7 @@
 	<div class="row">
 			<ul class="breadcrumbs">
 				<li class="ic_home"><a href="/"></a></li>
+				<div class="sprt"></div>
 				<?php if ($c->parent_id > 0):?>
 				<li><a href="/category/<?php echo $c->parent_id;?>"><?php echo $c->parent->title;?></a></li>
 				<div class="sprt"></div>

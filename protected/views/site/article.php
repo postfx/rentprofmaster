@@ -8,6 +8,7 @@
 	<div class="row">
 			<ul class="breadcrumbs">
 				<li class="ic_home"><a href="/"></a></li>
+				<div class="sprt"></div>
 				<li><a href="/articles">Статьи</a></li>
 				<div class="sprt"></div>
 				<li><a href="<?php echo Yii::app()->createUrl('site/article', array('id'=>$a->id));?>"><?php echo $a->title;?></a></li>
