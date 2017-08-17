@@ -1,0 +1,450 @@
+@media (max-width: 1200px) {
+
+	.company_inner img {
+		max-width: 417px;
+	}
+
+	.billboard_inner h2 {
+		margin-left: 15px;
+	}
+
+	.billboard_inner p {
+		margin-left: 15px;
+	}
+
+	.billboard_inner li {
+		margin-top: 190px;
+		margin-left: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 14px;
+	}
+
+	.billboard_inner li a {
+		margin-left: 10px;
+	}
+	.advantages_inner {
+		background-position: -40% 0;
+	}
+
+	.phone_inner ul li a {
+		margin-right: 0;
+		font-size: 18px;
+		margin-left: 150px;
+	}
+
+	.phone_inner p {
+		margin-left: 150px;
+	}
+}
+@media (max-width: 991px) {
+	.linefbg {display: 
+		none}
+
+.reviewbox .flex, .faqpage .flex {display: block;}
+.reviewbox .flex2, .faqpage .flex3 {width: 100%;}
+	.faqbox .flex {display: block;}
+	.faqbox .flex3 { width: 100% !important }
+	.steps { display: none; }
+.boxch {
+	width: 100%;
+}
+	.logo {
+		margin-left: -70px;
+		padding-top: 10px;
+	}
+
+	.mob {
+		margin-top: 17px;
+	}
+
+	.mob li {
+		padding: 0;
+	}
+
+	.mob a {
+		font-size: 18px;
+	}
+
+	.button {
+		padding-top: 9px;
+	}
+
+	.nav > li > a {
+		padding: 15px 31px;
+	}
+
+	.billboard_inner li a {
+		padding: 10px 25px 10px 25px;
+	}
+
+	.color_one img, .color_two img {
+		margin-top: -16px;
+		max-width: 163px;
+	}
+
+	.nav > .dropdown-full > .dropdown-menu {
+		margin-left: -100px;
+	}
+
+	.dropdown_menu_one, .dropdown_menu_two, .dropdown_menu_three {
+		padding-right: 10px;
+		padding-top: 15px;
+	}
+
+	.dropdown_two > li > a {
+		margin-left: 10px;
+	}
+
+	.advantages_inner {
+		background-position: -50% 0;
+	}
+
+	.company_inner img {
+		margin-top: 0;
+	}
+
+	.company_inner {
+		padding-bottom: 20px;
+	}
+
+	.done_inner img {
+		max-width: 229px;
+	}
+
+	.company_inner h2 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.done_inner {
+		min-height: 600px;
+	}
+
+	.security_plus p {
+		font-size: 12px;
+		margin-top: 48px;
+	}
+
+	.color_one p, .color_two p {
+		font-size: 14px;
+	}
+
+	.advantages_inner h2 {
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.done_inner h2 {
+		margin-top: 35px;
+		margin-bottom: 30px;
+	}
+
+	.advantages_two li {
+		margin-top: 20px;
+	}
+
+	.button_phone {
+		padding: 11px 20px;
+		font-size: 11px;
+	}
+
+	.phone_inner p {
+		margin-top: 30px; 
+		font-size: 14px;
+		margin-left: 100px;
+	}
+
+	.phone_inner ul li a {
+		font-size: 17px;
+		margin-left: 100px;
+	}
+
+	.address_tel {
+		font-size: 13px;
+		padding-right: 8px;
+	}
+
+	.address_inner h3 {
+		font-size: 12px;
+	}
+
+	.address_fone p {
+		font-size: 12px;
+	}
+
+	.footer_inner h4 {
+		font-size: 14px;
+	}
+
+	.block_three a {
+		font-size: 14px;
+	}
+
+	.block_one li {
+		margin-bottom: 0;
+	}
+
+	.block_two li {
+		margin-bottom: 0;
+	}
+}
+@media (max-width: 768px) {
+	.logo {
+		margin-left: 0;
+
+	}
+
+	.logo a {
+		font-size: 27px;
+	}
+
+	.mob {
+		margin-top: 11px;
+	}
+	.mob a {
+		font-size: 15px;
+	}
+
+	.button a {
+		padding-top: 9px;
+		padding-bottom: 9px;
+		font-size: 11px;
+	}
+
+	.dropdown-menu h4 a {
+		font-size: 14px;
+		margin-left: 15px;
+	}
+
+	.dropdown_menu_one > li > a, .dropdown_menu_two > li > a, .dropdown_menu_three > li > a {
+		font-size: 11px;
+		margin-left: 15px;
+	}
+
+	.nav > .dropdown-full > .dropdown-menu {
+		margin-left: 0;
+	}
+
+	.billboard_inner li a {
+		padding: 5px 15px 5px 15px;
+	}
+
+	.billboard_inner li {
+		margin-top: 70px;
+		margin-left: 5px;
+		padding-left: 7px;
+		padding-right: 6px;
+		font-size: 11px;
+	}
+
+	.billboard_inner h2 {
+		font-size: 20px;
+	}
+
+	.advantages_inner {
+		background-position: -230% 0;
+	}
+
+	.phone_inner {
+		min-height: 150px;
+	}
+	.phone_inner p {
+		margin-left: 150px;
+	}
+
+	.phone_inner ul li a {
+		margin-left: 150px;
+	}
+
+	.company_inner img {
+		max-width: 300px;
+	}
+
+	.company_inner p {
+		font-size: 12px;
+	}
+	.company_inner {
+		min-height: 400px;
+	}
+	.block_one {
+		padding-left: 100px;
+	}
+	.order_one, .order_two, .order_three {
+		min-height: 345px;
+	}
+}
+@media (max-width: 513px) {
+	.button a {
+		margin-bottom: 15px;
+	}
+
+	.billboard_inner li {
+		margin-top: 240px;
+	}
+
+	.company_inner h2 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.advantages_inner h2 {
+		margin-top: 40px;
+		margin-bottom: 30px;
+	}
+
+	.done_inner {
+		padding-bottom: 20px;
+	}
+
+	.phone_inner p {
+		margin-left: 0;
+	}
+
+	.phone_inner ul li a {
+		margin-left: 40px;
+	}
+	.button_phone {
+		margin-bottom: 10px;
+		float: left;
+		margin-top: 0;
+	}
+
+	.address_tel {
+		display: block;
+		width: 100%;
+	}
+
+	.block_three h4{
+		margin-top: 10px;
+	}
+
+	.dropdown_menu_one, .dropdown_menu_two, .dropdown_menu_three {
+		display: block;
+	}
+
+	.header_menu a {
+		border: none;
+	}
+
+	.nav > li > a {
+		border-bottom: 1px solid rgba(8, 8, 8, 0.7);
+	}
+
+	.header_menu li {
+		min-height: 0;
+	}
+
+	.nav-justified > li > a {
+		margin-bottom: 0;
+	}
+
+	.block_three a {
+		font-size: 14px;
+	}
+
+	.block_three h4 {
+		margin-left: 9px !important;
+	}
+
+	.footer_inner h4 {
+		font-size: 12px;
+		margin-top: 15px;
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+
+	.block_two ul {
+		margin-left: 0;
+	}
+
+	.block_two {
+		float: right;
+		padding-top: 40px;
+	}
+
+	.block_three {
+		float: left;
+	} 
+
+	.mail {
+		margin-bottom: 15px;
+	}
+	.done_inner img {
+		max-width: 290px;
+	}
+
+	.advantages_one p {
+		font-size: 13px;
+		padding-top: 49px;
+	}
+
+	.advantages_one li {
+		margin-top: 0;
+	}
+
+	.advantages_one span {
+		margin-right: 51px;
+	}
+
+	.advantages_two {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.advantages_inner h2 {
+		font-size: 25px;
+	}
+
+	.advantages_two p {
+		font-size: 12px;
+	}
+
+	.done_inner h2 {
+		margin-top: 25px;
+		margin-bottom: 25px;
+		font-size: 25px;
+	}
+
+	.company_inner h2 {
+		font-size: 25px;
+	}
+
+	.company_inner p {
+		font-size: 12px;
+	}
+
+	.company_inner a {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.color_one, .color_two {
+		min-height: 0;
+		width: 50%;
+		margin: 0 auto;
+		padding-bottom: 1px;
+		margin-bottom: 15px;
+	}
+
+	.security_inner h2 {
+		margin-top: 30px;
+		margin-bottom: 20px;
+		font-size: 22px;
+	}
+
+	.billboard_inner li {
+		font-size: 14px;
+	}
+
+	.block_one ul {
+		margin-right: 35px;
+	}
+
+	.color_one img, .color_two img {
+		margin-top: -19px;
+		max-width: 150px;
+	}
+
+	.block_one {
+		padding-left: 0;
+	}
+}
