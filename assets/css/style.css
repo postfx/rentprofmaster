@@ -689,7 +689,7 @@
 	content: counter(item);
 	position: absolute;
 	text-align: center;
-	top: 0;
+	top: -1px;
 	left: 0;
 	width: 28px;
 	height: 30px;
@@ -700,7 +700,7 @@
 	border-radius: 2px;
 	font-size: 14px;
 	font-weight: bold;
-	padding: 3px 0 0 0;
+	padding: 4px 0 0 0;
 }
 .advantages_two.liblue ul li p {
 	padding-top: 6px;
@@ -974,7 +974,11 @@ ul.breadcrumbs li a {font-size: 13px; color: #929fb2;font-family: 'Open Sans', s
 .title h1 {font-size: 30px;}
 section.abouthead {background: url(../img/about_head.jpg) no-repeat center top; height: 367px;background-size: 100% 100%; font-family: 'Open Sans', sans-serif;}
 section.aboutbox p {font-size: 14px; line-height: 24px;}
-.brdlft {border-left: 1px solid #EBEBEB;}
+.aboutbox h3{
+	margin: 20px 0 27px;
+}
+.brdrt {border-right: 1px solid #EBEBEB;}
+
 
 
 section.chefbox {}
@@ -1380,6 +1384,12 @@ section.biruz {background: #c8d5e7}
 section.bgnimf {background: #e3e9f1; padding:20px 0px; }
 
 .catinfo {min-height: 228px; background: #fff;border-radius: 0px 0px 5px 5px;}
+.catinfo.bgblock{
+	background: none;
+}
+.bgblock .table{
+	border-bottom: 2px solid #d2d8df;
+}
 .bgphonead {background: #374457; height: 228px; border-radius: 0px 0px 5px 5px; padding:30px 15px; text-align:center;}
 .bgphonead p {color: #9facbf; font-size: 17px;}
 .bgphonead h4 {font-size: 27px;color: #9facbf; text-transform: uppercase;}
@@ -1392,11 +1402,57 @@ section.bgnimf {background: #e3e9f1; padding:20px 0px; }
     display: inline;
 }
 .ctlnkbox {
-    padding: 36px 0;
+    padding: 32px 20px;
+}
+.ctlnkbox-anothPadding{
+	padding-left: 0;
+	padding-right: 0;
 }
 .complinfbox {
 	font-family: 'Open Sans', sans-serif;
-    padding: 28px 20px;
+    padding: 32px 20px;
+}
+.complinfbox .item-list{
+	counter-reset: item;
+	list-style-type: none;
+}
+.complinfbox .item-list:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+.complinfbox .item-list li{
+	position: relative;
+	padding: 0 0 0 20px;
+}
+.complinfbox .item-list li:before{
+	content: counter(item)".";
+	position: absolute;
+	text-align: center;
+	top: 0px;
+	left: 0;
+	counter-increment: item;
+	color: #849cc3;
+	display: block;
+	font-weight: bold;
+	font-size: 15px;
+}
+.catinfo .row-flex{
+	display: flex;
+	align-items: flex-start;
+	background: #fff;
+	border-bottom: 2px solid #d2d8df;
+}
+.row-flex .complinfbox h4{
+	margin-top: 0;
+}
+.informbox .bgphonead{
+	height: auto;
+	margin: 0 -16px 0 0;
+}
+.complinfbox .anothPadding{
+	padding-right: 0;
+	padding-left: 0;
 }
 .complinfbox h4 {color: #7789a6; font-size: 16px; font-weight: bold;}
 .complinfbox ol li {list-style-position: inside; margin-bottom: 10px; font-size:13px; }
@@ -1415,12 +1471,21 @@ section.bgnimf {background: #e3e9f1; padding:20px 0px; }
     background: url(../img/cat_inf_ic_l.png) no-repeat center top;
     display: block;
     width: 461px;
-    padding: 10px 0px 0px 66px;
+    padding: 10px 70px 0px 66px;
     height: 49px;
     line-height: 32px;
     color: #6b81a0;
     font-size: 14px;
     margin-bottom: 10px;
+    position: relative;
+}
+.ctlnlinf_long .size{
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	color: #a9b8cc;
 }
 .lnkgreen {
     display: block;
@@ -1584,6 +1649,10 @@ background: linear-gradient(to bottom, #4e5d74 0px,#667b9a 48px, #4e5d74 96px);
     font-weight: bold;
 }
 .boxcol {background: #fff;  border-radius: 3px; box-shadow: 0px 1px 2px #ccc;  margin-top: 15px; margin-bottom: 15px;}
+.boxcol-flex .row{
+	display: flex;
+	justify-content: stretch;
+}
 .bgf8 {background: #f8fafd; padding:35px; font-size: 14px; content: #3d3d3d; border-radius: 0px 3px 3px 0px}
 .bgf8 p {margin-bottom: 15px;}
 .imgcol {
@@ -1592,6 +1661,16 @@ background: linear-gradient(to bottom, #4e5d74 0px,#667b9a 48px, #4e5d74 96px);
     width: 282px;
     top: 150px;
     position: relative;
+}
+.imgcol-center {
+	top: 50%;
+	transform: translateY(-50%);
+}
+.imgcol-centerimg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .boxproductinfo .bgphonead {border-radius: 3px 3px 0px 0px; height: 250px;}
 .boxproductinfo .aside {background: #fff; padding:0px;}
@@ -1903,4 +1982,45 @@ h5 {font-size: 21px; }
 .contenttext ul li span {
     color: #333333;
     font-size: 15px;
+}
+
+.scaffoldprice{
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0px 1px 2px #ccc;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 0 25px;
+}
+
+.scaffoldprice table{
+	width: 100%;
+}
+
+.scaffoldprice-table{
+	margin: 0 -25px;
+}
+
+.scaffoldprice table th{
+	background: #e5e9ef;
+	padding: 16px 25px;
+}
+.scaffoldprice table td{
+	background: #f1f3f6;
+	padding: 16px 40px;
+}
+.scaffoldprice-info{
+	padding: 36px 15px;
+}
+
+.scaffoldprice-info .title{
+	color: #6f8098;
+	font-size: 16px;
+	display: block;
+	margin-bottom: 12px;
+}
+
+.scaffoldprice-info .dscr{
+	font-size: 13px;
+	line-height: 19px;
 }

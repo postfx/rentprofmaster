@@ -50,8 +50,6 @@
 
 </section>
 
-
-
 <section class="aboutbox">
 	<div class="container">
 		<div class="row">
@@ -128,9 +126,31 @@
 
 
 
+
 <section class="bgnimf">
 	<?php echo $c->data1; ?>
 </section>
+
+<!-- стр arenda-stroitelnyh-lesov Характеристики добавлен вес файлов(size) -->
+
+<section class="bgnimf">
+	<div class="container">
+		<div class="row">
+			<h3>Характеристики</h3>
+			<div class="col-sm-6 ctlnkbox ctlnkbox-anothPadding">
+				<a class="ctlnlinf_long" href="#">Каталог строительных лесов <span class="size">1,7 Мб</span></a> 
+				<a class="ctlnlinf_long" href="#">Комплектация<span class="size">1,7 Мб</span></a> 
+				<a class="ctlnlinf_long" href="#">Схемы<span class="size">1,7 Мб</span></a>
+			</div>
+			<div class="col-sm-6 ctlnkbox ctlnkbox-anothPadding">
+				<a class="ctlnlinf_long" href="#">Цены на аренду лесов<span class="size">1,7 Мб</span></a> 
+				<a class="ctlnlinf_long" href="#">Виды раскладок<span class="size">1,7 Мб</span></a> 
+				<a class="ctlnlinf_long" href="#">Каталог<span class="size">1,7 Мб</span></a>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 	<?php if ($c->id == 1):?>
 	<section class="calc">
@@ -643,9 +663,9 @@
 
 <?php foreach ($c->images as $i):?>
 <div class="col-sm-2">
-    <a href="<?php echo $i->getUrlOriginal();?>">
-        <img src="<?php echo $i->getUrlThumb();?>" alt="">
-    </a>
+	<a href="<?php echo $i->getUrlOriginal();?>">
+		<img src="<?php echo $i->getUrlThumb();?>" alt="">
+	</a>
 </div>
 <?php endforeach; ?>
 
