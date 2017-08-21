@@ -131,26 +131,6 @@
 	<?php echo $c->data1; ?>
 </section>
 
-<!-- стр arenda-stroitelnyh-lesov Характеристики добавлен вес файлов(size) -->
-
-<section class="bgnimf">
-	<div class="container">
-		<div class="row">
-			<h3>Характеристики</h3>
-			<div class="col-sm-6 ctlnkbox ctlnkbox-anothPadding">
-				<a class="ctlnlinf_long" href="#">Каталог строительных лесов <span class="size">1,7 Мб</span></a> 
-				<a class="ctlnlinf_long" href="#">Комплектация<span class="size">1,7 Мб</span></a> 
-				<a class="ctlnlinf_long" href="#">Схемы<span class="size">1,7 Мб</span></a>
-			</div>
-			<div class="col-sm-6 ctlnkbox ctlnkbox-anothPadding">
-				<a class="ctlnlinf_long" href="#">Цены на аренду лесов<span class="size">1,7 Мб</span></a> 
-				<a class="ctlnlinf_long" href="#">Виды раскладок<span class="size">1,7 Мб</span></a> 
-				<a class="ctlnlinf_long" href="#">Каталог<span class="size">1,7 Мб</span></a>
-			</div>
-		</div>
-	</div>
-</section>
-
 
 	<?php if ($c->id == 1):?>
 	<section class="calc">
@@ -307,7 +287,9 @@
 					</div>
 					<div class="col-sm-4">
 
-				<?php foreach ($c->reviews as $r):?>	
+				<?php foreach ($c->reviews as $r):?>
+
+
 				<div class="quest_block">
 						<div class="row">
 							<?php if (!empty($r->img)):?>
@@ -324,14 +306,13 @@
 						</div>
 					<p>“ <?php echo $r->text;?> ”</p>
 				</div>
+
 				<?php endforeach; ?>
 
 				<?php echo StaticBlock::get('phone_block');?>
-
 					</div>
 				</div>
 			</div>
-
 	</section>
 
 
@@ -653,28 +634,18 @@
 
 
 <section class="photogal">
-
-<div class="container">
-
-			<div class="titlesect"><h2>Фотогалерея</h2></div>
-
-
-<div class="gallerybox">
-
-<?php foreach ($c->images as $i):?>
-<div class="col-sm-2">
-	<a href="<?php echo $i->getUrlOriginal();?>">
-		<img src="<?php echo $i->getUrlThumb();?>" alt="">
-	</a>
-</div>
-<?php endforeach; ?>
-
-
-</div>
-
-
-
-</div>
+	<div class="container">
+		<div class="titlesect"><h2>Фотогалерея</h2></div>
+		<div class="gallerybox">
+		<?php foreach ($c->images as $i):?>
+			<div class="col-sm-2">
+				<a href="<?php echo $i->getUrlOriginal();?>">
+					<img src="<?php echo $i->getUrlThumb();?>" alt="">
+				</a>
+			</div>
+			<?php endforeach; ?>
+		</div>
+	</div>
 </section>
 
 
