@@ -23,7 +23,7 @@
 	}
 ?>
 
-<ul class="nav nav-justified" id="menu">
+<!--<ul class="nav nav-justified" id="menu">
 	<li class="dropdown dropdown-full">
 		<a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown">
 			Аренда
@@ -92,4 +92,6 @@
 		</ul>
 	</li>
 	<li><a href="/contacts">Контакты</a></li>
-</ul>
+</ul>-->
+
+<?php echo StaticBlock::get('menu'); ?>

@@ -1,4 +1,5 @@
 <?php
+//	die;
 	$this->pageTitle = Yii::app()->name;
 
 	$clientScript = Yii::app()->clientScript;
