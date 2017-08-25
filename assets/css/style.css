@@ -1291,18 +1291,19 @@ section.bggray {
 }
 .multi-line_form form > .flex > .flex{
 	width:100%;
+	display: flex;
 }
 .multi-line_form .flex6{
 	padding:0 0 14px 0px; 
 }
 
-/*.flex{
+.flex{
 	display:flex;
 	align-items:center;
-}*/
-/*.flex-start{
+}
+.flex-start{
 	align-items:flex-start;
-}*/
+}
 .flex-stretch{
 	align-items:stretch;
 }
@@ -1345,6 +1346,9 @@ section.bggray {
 .form{
 	font-family: 'Open Sans', sans-serif;
 	padding:47px 0;
+}
+.form .flex{
+	display: flex;
 }
 .form .h2,
 .form h2{
