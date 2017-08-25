@@ -248,7 +248,10 @@
 	<?php echo $this->renderPartial('/site/_orderform_catalog'); ?>
 
 
-</section><!-- /bggray -->
+</section>
+<!-- /bggray -->
+
+
 	<section class="address">
 		<div class="address_inner">
 			<div class="container">

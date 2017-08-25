@@ -1391,6 +1391,70 @@ section.bggray {
 	padding:35px 30px;
 	align-items:flex-start;
 }
+.about-equipment{
+	display: flex;
+	flex-wrap: wrap;
+}
+.about-equipment .list-box{
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 20px 10px 0;
+	min-height: 225px;
+	display: flex;
+	width: 31%;
+}
+.about-equipment .list-box-hide{
+	z-index: 1;
+	background: rgba(55, 68, 87, 1);
+	opacity: 0;
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+	transition: all 0.3s linear;
+	display: flex;
+}
+.about-equipment .list-box img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+}
+.about-equipment .list-box-hide .list-box-dscr{
+	text-align: left;
+	position: relative;
+	transform: translateY(0);
+	color: #fff;
+	font-size: 13px;
+	padding: 20px 40px 70px;
+	line-height: 19px;
+}
+.about-equipment .list-box-hide .list-box-dscr .save{
+	position: absolute;
+	bottom: 0;
+	background: #57a763;
+	left: 0;
+	right: 0;
+	font-size: 15px;
+	color: #fff;
+	padding: 15px;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: flex;
+	justify-content: space-between;
+}
+.about-equipment .list-box-hide .list-box-dscr .save span{
+	display:inline-block;
+	vertical-align:top;
+	color: #81d98e;
+}
+.about-equipment .list-box:hover .list-box-hide{
+	opacity: 1;
+	transform: translateY(0);
+}
 .send-btn {
     display: block;
     width: 255px;
