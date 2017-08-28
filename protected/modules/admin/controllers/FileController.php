@@ -48,12 +48,12 @@ public function actionCreate()
 public function actionUpdate($id)
 {
 	$model=$this->loadModel($id);
-	$img = $model->img;
+	$path = $model->path;
 
 	if(isset($_POST['File']))
 	{
 		$model->attributes=$_POST['File'];
-		$model->img = $img;
+		$model->path = $path;
 
 		if($model->save()) {
 

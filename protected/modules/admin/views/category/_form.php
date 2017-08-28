@@ -14,6 +14,20 @@
 	'htmlOptions' => array('enctype' => 'multipart/form-data'),
 )); ?>
 
+<br/>
+<div class="form-actions">
+	<?php $this->widget('booster.widgets.TbButton', array(
+			'buttonType'=>'submit',
+			'context'=>'primary',
+			'label'=>$model->isNewRecord ? 'Создать' : 'Сохранить',
+		)); ?>
+
+	<?php if (!$model->isNewRecord): ?>
+	<button class="btn btn-primary" type="submit" name="yt2">Обновить</button>
+	<?php endif; ?>
+</div>
+<br/>
+
 <p class="help-block">Поля, отмеченные <span class="required">*</span>, обязательны к заполнению.</p>
 
 <?php echo $form->errorSummary($model); ?>
@@ -65,6 +79,23 @@
 		);
 		
 	?>
+
+	<?php
+		echo $form->dropDownListGroup(
+			$model,
+			'calc_type',
+			array(
+				'wrapperHtmlOptions' => array(
+					'class' => 'col-sm-5',
+				),
+				'widgetOptions' => array(
+					'data' => array('1'=>'1', '2'=>'2', '3'=>'3'),
+					'htmlOptions' => array(),
+				)
+			)
+		);
+	?>
+
 
 	<hr/>
     <?php if ($model->img): ?>
@@ -132,6 +163,34 @@
 	<hr/>
 
 
+
+
+	<div class="form-group">
+	<?php echo $form->labelEx($model, 'files'); ?>
+
+	<?php $this->widget('booster.widgets.TbSelect2',array(
+		'asDropDownList' => true,
+		'model'=>$model,
+		'attribute'=>'files',
+		'options'  => array(
+			'placeholder' => $model->getAttributeLabel('files'),
+			'tokenSeparators' => array(',', ' '),
+			'width'=>'100%',
+			'allowClear'=>true,
+		),
+
+		'data'=> CHtml::listData(File::model()->findAll(),'id','title'),
+		'htmlOptions'=>array(
+			'multiple'=>'multiple',
+		),
+	));
+	?>
+	</div>
+
+	<hr/>
+
+
+
 	<div class="form-group">
 		<?php echo $form->labelEx($model, 'images'); ?>
 		<ul class="images-list">
@@ -163,6 +222,10 @@
 			'context'=>'primary',
 			'label'=>$model->isNewRecord ? 'Создать' : 'Сохранить',
 		)); ?>
+
+	<?php if (!$model->isNewRecord): ?>
+	<button class="btn btn-primary" type="submit" name="yt2">Обновить</button>
+	<?php endif; ?>
 </div>
 
 <?php $this->endWidget(); ?>

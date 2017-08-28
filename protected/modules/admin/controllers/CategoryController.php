@@ -39,7 +39,14 @@ public function actionCreate()
 		} else
 			$faqs = array();
 
-		
+
+		if (!empty($_POST['Category']['files'])) {
+			$files = $_POST['Category']['files'];
+			unset($_POST['Category']['files']);
+		} else
+			$files = array();
+
+
 		$model->attributes=$_POST['Category'];
 		if($model->save()) {
 
@@ -64,8 +71,21 @@ public function actionCreate()
 					$p->save();
 				}
 
+			if (is_array($files))
+				foreach ($files as $ns)
+				{
+					$p = new CategoriesFiles;
+					$p->category_id = $model->id;
+					$p->file_id = $ns;
+					$p->save();
+				}
+
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
+		} else {
+			$model->files = $files;
+			$model->reviews = $reviews;
+			$model->faqs = $faqs;
 		}
 	}
 
@@ -98,6 +118,12 @@ public function actionUpdate($id)
 		} else
 			$faqs = array();
 
+		if (!empty($_POST['Category']['files'])) {
+			$files = $_POST['Category']['files'];
+			unset($_POST['Category']['files']);
+		} else
+			$files = array();
+
 
 		$model->attributes=$_POST['Category'];
 		$model->img = $img;
@@ -119,6 +145,12 @@ public function actionUpdate($id)
 			$model->faqs = NULL;
 
 
+			$nws = CategoriesFiles::model()->findAll('category_id=:category_id', array(':category_id'=>$id));
+			foreach ($nws as $p)
+				$p->delete();
+			$model->files = NULL;
+
+
 			if (is_array($reviews))
 				foreach ($reviews as $ns)
 				{
@@ -138,8 +170,23 @@ public function actionUpdate($id)
 				}
 
 
-			if ($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if (is_array($files))
+				foreach ($files as $ns)
+				{
+					$p = new CategoriesFiles;
+					$p->category_id = $model->id;
+					$p->file_id = $ns;
+					$p->save();
+				}
+
+
+			if ($model->save()) {
+
+				if (isset($_POST['yt2']))
+					$this->redirect(array('update','id'=>$model->id));
+				else
+					$this->redirect(array('view','id'=>$model->id));
+			}
 		}
 	}
 

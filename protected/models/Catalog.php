@@ -53,6 +53,8 @@ class Catalog extends CActiveRecord
 			'reviews' => array(self::MANY_MANY, 'Review', 'catalog_reviews(catalog_id, review_id)'),
 			'faqs' => array(self::MANY_MANY, 'Faq', 'catalog_faqs(catalog_id, faq_id)'),
 
+			'files' => array(self::MANY_MANY, 'File', 'catalog_files(catalog_id, file_id)'),
+
 			'images' => array(
 				self::HAS_MANY,
 				'Images',
@@ -83,6 +85,7 @@ class Catalog extends CActiveRecord
 			'images' => 'Фотогалерея',
 			'alias' => 'Идентификатор (ЧПУ)',
 			'active' => 'Активно',
+			'files' => 'Файлы',
 		);
 	}
 
