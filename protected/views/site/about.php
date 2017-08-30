@@ -23,10 +23,12 @@
 </div>
 
 
-<section class="abouthead">
+<!--<section class="abouthead">
 
-</section>
+</section>-->
 
+
+<?php echo StaticBlock::get('about_img');?>
 
 
 <section class="aboutbox">

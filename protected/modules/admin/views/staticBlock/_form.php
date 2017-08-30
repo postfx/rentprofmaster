@@ -35,6 +35,20 @@ switchInputs(".$type.");
 	'enableAjaxValidation'=>false,
 )); ?>
 
+<br/>
+<div class="form-actions">
+	<?php $this->widget('booster.widgets.TbButton', array(
+			'buttonType'=>'submit',
+			'context'=>'primary',
+			'label'=>$model->isNewRecord ? 'Создать' : 'Сохранить',
+		)); ?>
+
+	<?php if (!$model->isNewRecord): ?>
+	<button class="btn btn-primary" type="submit" name="yt2">Обновить</button>
+	<?php endif; ?>
+</div>
+<br/>
+
 <p class="help-block">Поля, помеченные <span class="required">*</span>, обязательны к заполнению.</p>
 
 <?php echo $form->errorSummary($model); ?>
@@ -66,6 +80,10 @@ switchInputs(".$type.");
 			'context'=>'primary',
 			'label'=>$model->isNewRecord ? 'Создать' : 'Сохранить',
 		)); ?>
+
+	<?php if (!$model->isNewRecord): ?>
+	<button class="btn btn-primary" type="submit" name="yt2">Обновить</button>
+	<?php endif; ?>
 </div>
 
 <?php $this->endWidget(); ?>

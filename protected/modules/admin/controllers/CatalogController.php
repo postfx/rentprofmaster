@@ -39,6 +39,13 @@ public function actionCreate()
 		} else
 			$faqs = array();
 
+		if (!empty($_POST['Catalog']['files'])) {
+			$files = $_POST['Catalog']['files'];
+			unset($_POST['Catalog']['files']);
+		} else
+			$files = array();
+
+
 		$model->attributes=$_POST['Catalog'];
 		if($model->save()) {
 
@@ -62,10 +69,24 @@ public function actionCreate()
 					$p->save();
 				}
 
+			if (is_array($files))
+				foreach ($files as $ns)
+				{
+					$p = new CatalogFiles;
+					$p->catalog_id = $model->id;
+					$p->file_id = $ns;
+					$p->save();
+				}
+
 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
+		} else {
+			$model->files = $files;
+			$model->reviews = $reviews;
+			$model->faqs = $faqs;
 		}
+		
 	}
 
 	$this->render('create',array(
@@ -97,6 +118,12 @@ public function actionUpdate($id)
 		} else
 			$faqs = array();
 
+		if (!empty($_POST['Catalog']['files'])) {
+			$files = $_POST['Catalog']['files'];
+			unset($_POST['Catalog']['files']);
+		} else
+			$files = array();
+
 		$model->attributes=$_POST['Catalog'];
 		$model->img = $img;
 
@@ -117,6 +144,12 @@ public function actionUpdate($id)
 			$model->faqs = NULL;
 
 
+			$nws = CatalogFiles::model()->findAll('catalog_id=:catalog_id', array(':catalog_id'=>$id));
+			foreach ($nws as $p)
+				$p->delete();
+			$model->files = NULL;
+
+
 			if (is_array($reviews))
 				foreach ($reviews as $ns)
 				{
@@ -135,9 +168,23 @@ public function actionUpdate($id)
 					$p->save();
 				}
 
+			if (is_array($files))
+				foreach ($files as $ns)
+				{
+					$p = new CatalogFiles;
+					$p->catalog_id = $model->id;
+					$p->file_id = $ns;
+					$p->save();
+				}
 
-			if ($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+
+			if ($model->save()) {
+
+				if (isset($_POST['yt2']))
+					$this->redirect(array('update','id'=>$model->id));
+				else
+					$this->redirect(array('view','id'=>$model->id));
+			}
 		}
 	}
 

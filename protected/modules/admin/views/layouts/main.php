@@ -91,8 +91,11 @@
 										array('label' => Yii::t('app', 'Адреса'), 'url' => array('address/admin')),
 										array('label' => Yii::t('app', 'Руководители'), 'url' => array('people/admin')),
 									)),
+
+									array('label' => 'Файлы', 'url' => array('file/admin')),
 									
 									array('label' => Yii::t('app', 'Вопросы и ответы'), 'url' => array('faq/admin')),
+									array('label' => Yii::t('app', 'Отзывы'), 'url' => array('review/admin')),
 									array('label' => Yii::t('app', 'Контент (текстовые блоки)'), 'url' => array('staticBlock/admin')),
 									array('label' => Yii::t('app', 'Статьи'), 'url' => array('article/admin')),
 									array('label' => Yii::t('app', 'Комплектующие для опалубки'), 'url' => array('item/admin')),

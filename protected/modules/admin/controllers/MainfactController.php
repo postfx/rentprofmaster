@@ -57,8 +57,13 @@ public function actionUpdate($id)
 
 			$this->saveImages($model);
 
-			if ($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if ($model->save()) {
+
+				if (isset($_POST['yt2']))
+					$this->redirect(array('update','id'=>$model->id));
+				else
+					$this->redirect(array('view','id'=>$model->id));
+			}
 		}
 	}
 

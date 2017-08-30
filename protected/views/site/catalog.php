@@ -10,9 +10,9 @@
 			<ul class="breadcrumbs">
 				<li class="ic_home"><a href="/"></a></li>
 				<div class="sprt"></div>
-				<li><a href="/category/<?php echo $cat->id;?>"><?php echo $cat->title;?></a></li>
+				<li><a href="/<?php echo $cat->alias;?>"><?php echo $cat->title;?></a></li>
 				<div class="sprt"></div>
-				<li><a href="/catalog/<?php echo $c->id;?>"><?php echo $c->title;?></a></li>
+				<li><a href="/<?php echo $cat->alias;?>/<?php echo $c->alias;?>"><?php echo $c->title;?></a></li>
 				<div class="sprt"></div>
 			</ul>
 	</div>

@@ -33,7 +33,7 @@ class Category extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, anounce, data1, descr, active, alias', 'required'),
+			array('title, anounce, data1, descr, active, alias, calc_type', 'required'),
 			array('parent_id', 'numerical', 'integerOnly'=>true),
 			array('img, data2, data3, reviews, tags', 'safe'),
 			array('title, img', 'length', 'max'=>256),
@@ -54,6 +54,8 @@ class Category extends CActiveRecord
 			'parent' => array(self::BELONGS_TO, 'Category', 'parent_id'),
 			'reviews' => array(self::MANY_MANY, 'Review', 'categories_reviews(category_id, review_id)'),
 			'faqs' => array(self::MANY_MANY, 'Faq', 'categories_faqs(category_id, faq_id)'),
+
+			'files' => array(self::MANY_MANY, 'File', 'categories_files(category_id, file_id)'),
 
 			'images' => array(
 				self::HAS_MANY,
@@ -84,6 +86,8 @@ class Category extends CActiveRecord
 			'images' => 'Фотогалерея',
 			'alias' => 'Идентификатор (ЧПУ)',
 			'active' => 'Активно',
+			'calc_type' => 'Тип калькулятора',
+			'files' => 'Файлы',
 		);
 	}
 

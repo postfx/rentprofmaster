@@ -53,9 +53,14 @@ $model=$this->loadModel($id);
 
 if(isset($_POST['StaticBlock']))
 {
-$model->attributes=$_POST['StaticBlock'];
-if($model->save())
-$this->redirect(array('view','id'=>$model->id));
+	$model->attributes=$_POST['StaticBlock'];
+	if($model->save()) {
+
+		if (isset($_POST['yt2']))
+			$this->redirect(array('update','id'=>$model->id));
+		else
+			$this->redirect(array('view','id'=>$model->id));
+	}
 }
 
 $this->render('update',array(

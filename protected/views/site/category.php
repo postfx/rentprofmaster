@@ -13,11 +13,14 @@
 				<li class="ic_home"><a href="/"></a></li>
 				<div class="sprt"></div>
 				<?php if ($c->parent_id > 0):?>
-				<li><a href="/category/<?php echo $c->parent_id;?>"><?php echo $c->parent->title;?></a></li>
+				<li><a href="/<?php echo $c->parent->alias;?>"><?php echo $c->parent->title;?></a></li>
+				<div class="sprt"></div>
+				<li><a href="/<?php echo $c->parent->alias;?>/<?php echo $c->alias;?>"><?php echo $c->title;?></a></li>
+				<div class="sprt"></div>
+				<?php else: ?>
+				<li><a href="/<?php echo $c->alias;?>"><?php echo $c->title;?></a></li>
 				<div class="sprt"></div>
 				<?php endif; ?>
-				<li><a href="/category/<?php echo $c->id;?>"><?php echo $c->title;?></a></li>
-				<div class="sprt"></div>
 			</ul>
 	</div>
 	</div>
@@ -66,7 +69,7 @@
 		<div class="row">
 
 				<?php foreach ($childs as $ch):?>
-				<a href="/category/<?php echo $ch->id;?>">
+				<a href="/<?php echo $c->alias;?>/<?php echo $ch->alias;?>">
 				<div class="col-sm-6 bgforest">
 					<div class="txtboxq">
 						<h2><?php echo $ch->title;?></h2>
@@ -104,7 +107,7 @@
 		<div class="row">
 
 				<?php foreach ($catalog as $ca):?>
-				<a href="/catalog/<?php echo $ca->id;?>">
+				<a href="/<?php echo $c->alias;?>/<?php echo $ca->alias;?>">
 				<div class="col-sm-6 bgforest">
 					<div class="txtboxq">
 						<h2><?php echo $ca->title;?></h2>
