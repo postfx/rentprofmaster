@@ -1680,6 +1680,7 @@ select.form-control{
 	background-position:center;
 	background-repeat:no-repeat;
 }
+
 .form-selected{
 	display: none;
 }
@@ -3145,6 +3146,13 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 	font-weight: 700;
 	font-size: 18px;
 	margin-top: 20px;
+	transition: color ease-in-out .25s;
+}
+
+.types-huts-view__product a:hover,
+.executed-works__product a:hover {
+	color: #5b7496;
+	transition: color ease-in-out .25s;
 }
 
 
@@ -3317,6 +3325,10 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 	box-shadow: 3px 3px 7px #e6e9ec;
 }
 
+div.photogal {
+	background: #f1f4f8;
+}
+
 .gallery-two-coloms {
 	display: flex;
 	flex-direction: row;
@@ -3334,7 +3346,14 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
     font-size: 25px;
     font-weight: bold;
 	 color: #fff;
+	 transition: color ease-in-out .25s
+
 }
+.gallery-two-coloms .gallery-item .title:hover {
+	color: #000;
+	transition: color ease-in-out .25s
+}
+
 
 .gallery-two-coloms .gallery-item .title-dscr {
     font-size: 13px;
