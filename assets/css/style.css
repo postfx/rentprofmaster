@@ -1050,6 +1050,8 @@
 .advantages_two.liblue ul li p {
 	padding-top: 6px;
 	color: #000;
+	font-size: 15px;
+	overflow: hidden;
 }
 .advantages_two ul li p {
 	display: block;
@@ -1338,9 +1340,29 @@ section.aboutbox p {font-size: 14px; line-height: 24px;}
 .aboutbox h3{
 	margin: 20px 0 27px;
 }
-.brdrt {border-right: 1px solid #EBEBEB;}
+.brdrt {padding-right: 50px;}
 
+.aboutbox {
+	padding: 30px 0;
+	position: relative;
+}
 
+.aboutbox::after  {
+	content:'';
+	height: 100%;
+	width: 1px;
+	background-color: #EBEBEB;
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.advantages_two.liblue {
+    padding: 0 29px;
+}
 
 section.chefbox {}
 
@@ -3414,6 +3436,18 @@ div.photogal {
 .gallery-two-coloms .gallery-item .block-btn .btn:hover {
 	color: #000;
 	transition: color ease-in-out .25s
+}
+
+.aboutbox h3 {
+
+}
+
+.features {
+	background-color: #e3e9f1;
+}
+
+.boxpad .quest_block__mg {
+	margin-bottom: 0;
 }
 
 
