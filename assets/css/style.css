@@ -3340,7 +3340,7 @@ div.photogal {
     color: #fff;
 }
 
-.gallery-two-coloms .gallery-item .title {
+.gallery-two-coloms .gallery-item .title, .slick-initialized .slick-slide .title {
     display: block;
     text-transform: uppercase;
     font-size: 25px;
@@ -3349,7 +3349,7 @@ div.photogal {
 	 transition: color ease-in-out .25s
 
 }
-.gallery-two-coloms .gallery-item .title:hover {
+.gallery-two-coloms .gallery-item .title:hover, .slick-initialized .slick-slide .title:hover {
 	color: #000;
 	transition: color ease-in-out .25s
 }
