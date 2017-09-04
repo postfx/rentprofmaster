@@ -40,22 +40,10 @@ $('.multiple-items').slick({
   slidesToScroll: 2
 });
 
-$('.types-huts-slider').slick({
-  infinite: true,
-  speed: 300,
-  slidesToShow: 2,
-  slidesToScroll:2,
-  responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
 
-    ]
-});
+
+
+
 
 $('.executed-works-slider').slick({
   infinite: true,
@@ -70,6 +58,43 @@ $('.executed-works-slider').slick({
           slidesToScroll: 1
         }
       }
-
     ]
 });
+
+
+
+
+(function autoHeight () {
+    $('.types-huts-slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll:2,
+        responsive: [
+            {
+                breakpoint: 860,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
+    });
+    var typesHutsSlider = document.querySelector('.types-huts-slider');
+    if(typesHutsSlider) {
+        var typesHutsViewProduct = typesHutsSlider.querySelectorAll('.types-huts-view__product');
+        for (var i = 0; i < typesHutsViewProduct.length; i++) {
+            var h = typesHutsViewProduct[i].clientWidth;
+            typesHutsViewProduct[i].style.cssText +="height:"+ h +"px;";
+
+        }
+        window.addEventListener('resize', function () {
+            for (var i = 0; i < typesHutsViewProduct.length; i++) {
+                var h = typesHutsViewProduct[i].clientWidth;
+                typesHutsViewProduct[i].style.cssText +="height:"+ h +"px;";
+
+            }
+        })
+    }
+}())

@@ -2218,6 +2218,11 @@ background: linear-gradient(to bottom, #4e5d74 0px,#667b9a 48px, #4e5d74 96px);
     top: 150px;
     position: relative;
 }
+
+
+
+
+
 .imgcol-center {
 	top: 50%;
 	transform: translateY(-50%);
@@ -3158,6 +3163,7 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 
 .types-huts-view__product {
 	width: 45%;
+	position: relative;
 }
 
 .types-huts-view__product img {
@@ -3175,6 +3181,20 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 	transition: color ease-in-out .25s;
 }
 
+.types-huts .types-huts-block .types-huts-slider .types-huts-view__product img {
+	max-width: 215px;
+	max-height: 161px;
+
+	
+}
+
+.types-huts-view__inner {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .types-huts-view__product a:hover,
 .executed-works__product a:hover {
 	color: #5b7496;
@@ -3182,9 +3202,9 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 }
 
 .types-huts-block .types-huts-slider .types-huts-view__product {
-	padding: 100px;
 	background-color: #fff;
 	border-radius: 50%;
+
 }
 
 
@@ -3342,6 +3362,9 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 	transform: translateY(50%);
 }
 
+.boxcol-two .imgcol-medium img {
+	    transform: translateY(25%);
+}
 .boxcol-two .bgf8 {
 	width: 55%;
 }
@@ -3565,6 +3588,62 @@ div.photogal {
 	left: 0;
 	right: 0;
 }
+
+.block-title {
+   box-shadow: 3px 3px 6px #d8dbdf;
+}
+
+.block-title h1 {
+	font-size: 30px;
+	color: #232323;
+}
+
+.shadow-table{
+	position: relative;
+}
+
+.shadow-table::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 5px; 
+	background: url(../img/../img/shadow-table.png) no-repeat;
+	opacity: 0.11;
+    background-size: cover;
+}
+
+.table_cost td {
+	font-size: 16px;
+	color: #545455;
+}
+
+.bg-grey {
+	background: #e5e9ef;
+}
+
+td.colorBlue,
+.colorBlue {
+	color: #6f8098;
+	font-size: 16px;
+}
+
+.two-columns_text {
+	padding: 35px 40px;
+	     box-shadow: 0px 3px 6px #d8dbdf;
+}
+.two-columns_text p {
+	font-size: 13px;
+}
+
+.col-img {
+	display: flex;
+	    flex-direction: column;
+}
+
+
+
 
 
 @media (max-width:1024px){
