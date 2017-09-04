@@ -3438,8 +3438,9 @@ div.photogal {
 	transition: color ease-in-out .25s
 }
 
-.aboutbox h3 {
-
+.description-section {
+	padding: 20px 0 25px;
+	background: #f1f4f8;
 }
 
 .features {
@@ -3449,6 +3450,37 @@ div.photogal {
 .boxpad .quest_block__mg {
 	margin-bottom: 0;
 }
+
+.form .flex .input-group input{
+	color: #8091a9;
+}
+
+.form .flex .input-group input:focus{
+	color: #8091a9;
+
+}
+
+.form textarea {
+	resize: none;
+	color: #8091a9;
+}
+
+.form textarea[placeholder]          {
+	color: #8091a9;
+}
+
+.form textarea::-moz-placeholder     {
+	color:#8091a9;
+}
+
+.form textarea:-moz-placeholder      {
+	color:#8091a9;
+}
+
+.form textarea:-ms-input-placeholder {
+	color:#8091a9;
+}
+
 
 
 @media (max-width:1024px){
@@ -3493,3 +3525,6 @@ div.photogal {
     padding: 40px 0;
 	}
 }
+
+
+
