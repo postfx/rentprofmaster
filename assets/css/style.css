@@ -1856,7 +1856,11 @@ section.steps h1 {text-align: center; color: #fff; font-size: 28px; text-transfo
 }
 section.biruz {background: #c8d5e7}
 
-section.bgnimf {background: #f1f4f8; padding:20px 0px; }
+section.bgnimf {
+	/*background: #f1f4f8; */
+	background-color: #e3e9f1;;
+	padding:20px 0;
+}
 
 .catinfo {min-height: 228px; background: #fff;border-radius: 0px 0px 5px 5px;}
 .catinfo.bgblock{
@@ -3177,10 +3181,16 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 	transition: color ease-in-out .25s;
 }
 
+.types-huts-block .types-huts-slider .types-huts-view__product {
+	padding: 100px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
 
 .types-huts .slick-initialized .slick-slide,
 .executed-works .slick-initialized .slick-slide {
-	background: none;
+	background-image: none;
 	min-height: auto;
 	outline: none;
 }
@@ -3469,6 +3479,10 @@ div.photogal {
 	color: #8091a9;
 }
 
+.form .form-control::-webkit-input-placeholder {
+	color:#8091a9;
+}
+
 .form textarea::-moz-placeholder     {
 	color:#8091a9;
 }
@@ -3481,6 +3495,76 @@ div.photogal {
 	color:#8091a9;
 }
 
+.wrap-range .irs-min,
+.wrap-range .irs-max {
+	font-size: 0;
+}
+
+.tabs-list li button:hover {
+	background-color: #58a863;
+	color: #fff;
+	transition: background-color ease-in-out .25s, color ease-in-out .25s;
+}
+
+.tabs-list li button:active {
+	background-color: #fff;
+	color: #58a863;
+	outline: none;
+	transition: background-color ease-in-out .25s, color ease-in-out .25s;
+}
+
+.tabs-list li.tabs-list__item_active button:hover {
+	outline: none;
+	background-color: #58a863;
+	color: #fff;
+	transition: background-color ease-in-out .25s, color ease-in-out .25s;
+}
+
+.tabs-list li button:active::before {
+	content: '';
+	height:3px; ;
+	background-color: #58a863;
+	width: 100%;
+	position: absolute;
+	bottom:0;
+	left: 0;
+	right: 0;
+}
+.tabs-list {
+	padding-top: 25px;
+}
+
+.faqpage__arenda_lesov .faq-item {
+	width: 47%;
+}
+
+.arenda-lesov--decor {
+	width: 100%;
+}
+
+.arenda-lesov--decor img{
+	width: 100%;
+}
+
+.wrap-range .irs-from,.wrap-range .irs-to,.wrap-range .irs-single {
+	color: #7789a6;
+	background: #fff;
+	top: -3px;
+	right: -42px;
+	font-size: 15px;
+}
+
+
+.tabs-list li.tabs-list__item_active button::before {
+	content: '';
+	height:3px; ;
+	background-color: #58a863;
+	width: 100%;
+	position: absolute;
+	bottom:0;
+	left: 0;
+	right: 0;
+}
 
 
 @media (max-width:1024px){
