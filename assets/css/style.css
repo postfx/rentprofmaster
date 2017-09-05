@@ -2938,6 +2938,14 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 	bottom: 0;
 	background: rgba(41,53,70, 0.9);
 }
+.video-list-item iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	visibility: hidden;
+}
 .video-list-img img{
 	min-width: 100%;
 	min-height: 100%;

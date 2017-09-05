@@ -98,3 +98,18 @@ $('.executed-works-slider').slick({
         })
     }
 }())
+
+
+$(document).ready(function(){
+
+	$('.to-play-video').click(function(){
+		var id = parseInt($(this).attr('data-id')) || 0;
+
+		$("#ytplayer"+id)[0].src += "&autoplay=1";
+
+		$("#ytplayer"+id).css('visibility', 'visible');
+		$(this).parent().parent().find('.video-list-img').css('visibility', 'hidden');
+		$(this).parent().parent().find('.video-list-link').css('visibility', 'hidden');
+
+	});
+});
