@@ -2164,7 +2164,22 @@ th {font-size: 14px; color: #587299;}
 }
 
 section.calc {background: #f1f4f8; padding:40px 0 ; font-family: 'Open Sans', sans-serif;}
-
+section.calc .calc_width{
+	width: 50%;
+	display: inline-block;
+}
+section.calc .calc_width .lftdel{
+	background: #e6ebf3;
+	padding: 40px;
+}
+section.calc .calc_width .rghtdel{
+	background: #fff;
+	padding: 40px;
+}
+section.calc .calc__right.box-calc{
+	background: none;
+	padding: 60px 40px;
+}
 .calc__title {font-family: 'Open Sans', sans-serif;}
 
 .linebgtabs .tabs-list li.tabs-list__item_active button {
@@ -3451,19 +3466,29 @@ div.photogal {
 .gallery-two-coloms.opalubki-grid .gallery-item img{
 	max-width: 286px;
 	max-height: 284px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,0);
 }
 
-.gallery-two-coloms.opalubki-grid .gallery-item .gallery-item-hide{
-
-	z-index: 1;
-	background: rgba(55, 68, 87, 1);
-	opacity: 0;
-	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
-	transition: all 0.3s linear;
-	display: flex;
+.gallery-two-coloms.opalubki-grid .gallery-item .gallery-hide{
+	    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+      z-index: 1;
+    background: rgba(13, 34, 56, 0.7);
+    opacity: 0;
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    transition: all 0.3s linear;
 }
-.gallery-two-coloms.opalubki-grid .gallery-item .gallery-item-hide .gallery-item-dscr{
+.opalubki-grid .gallery-item .gallery-hide .item-dscr{
     text-align: left;
     position: relative;
     transform: translateY(0);
@@ -3471,72 +3496,43 @@ div.photogal {
     font-size: 13px;
     padding: 20px 10% 70px;
     line-height: 19px;
-	
 }
-
-.gallery-two-coloms.opalubki-grid .gallery-item:hover .gallery-item-hide{
-	opacity: 1;
-	transform: translateY(0);
+.opalubki-grid .gallery-item .gallery-hide .item-dscr .list{
+	list-style-type: none;
+	padding: 22px 0 0 0;
 }
-
-
-
-/*.about-equipment .list-box img{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: auto;
-	height: auto;
-	min-width: 100%;
-	min-height: 100%;
-}
-.about-equipment .list-box-hide .list-box-dscr{
-	text-align: left;
+.opalubki-grid .gallery-item .gallery-hide .item-dscr .list li{
 	position: relative;
-	transform: translateY(0);
-	color: #fff;
-	font-size: 13px;
-	padding: 20px 10% 70px;
-	line-height: 19px;
+	padding: 0 0 10px 25px;
 }
-.about-equipment .list-box-hide .list-box-dscr .save{
+.opalubki-grid .gallery-item .gallery-hide .item-dscr .list li:after{
+	content: '';
 	position: absolute;
-	bottom: 0;
-	background: #57a763;
+	top: 6px;
 	left: 0;
-	right: 0;
-	font-size: 15px;
+	background: #71c17d;
+	width: 9px;
+	height: 9px;
+}
+.opalubki-grid .gallery-item .gallery-hide .item-dscr .list li a{
 	color: #fff;
-	padding: 15px 10%;
-	text-transform: uppercase;
-	font-weight: 600;
-	display: flex;
-	justify-content: space-between;
+	font-size: 15px;
 }
-.about-equipment .list-box-hide .list-box-dscr .save span{
-	display:inline-block;
-	vertical-align:top;
-	color: #81d98e;
-}
-.about-equipment .list-box:hover .list-box-hide{
+.gallery-two-coloms.opalubki-grid .gallery-item:hover .gallery-hide {
 	opacity: 1;
 	transform: translateY(0);
 }
+.gallery-two-coloms.opalubki-grid .gallery-item:hover .block-btn{
+	display: none;
+}
+.gallery-two-coloms.opalubki-grid .gallery-item:hover .block-title{
+	display: none;
+}
+.gallery-two-coloms.opalubki-grid .gallery-item{
+	overflow: hidden;
+}
 
-
-*/
-
-
-
-
-
-
-
-
-
-
-.gallery-two-coloms.opalubki-grid .block-title .title{
+.gallery-two-coloms.opalubki-grid .gallery-item .block-title .title{
 	line-height: 29px;
 	margin: 0 0 20px;
 }
@@ -3556,8 +3552,11 @@ div.photogal {
     line-height: 30px;
     font-weight: bold;
 	 color: #fff;
-	 transition: color ease-in-out .25s
-
+	 transition: color ease-in-out .25s;
+	 margin: 0 0 12px;
+}
+.gallery-two-coloms.opalubki-grid .gallery-item .title:hover, .slick-initialized .slick-slide .title:hover{
+	color: #fff;
 }
 .gallery-two-coloms .gallery-item .title:hover, .slick-initialized .slick-slide .title:hover {
 	color: #000;
@@ -3825,6 +3824,12 @@ td.colorBlue,
 
 
 @media (max-width:768px) {
+	section.calc .calc_width{
+		width: 100%;
+	}
+	section.calc .calc__right.box-calc{
+		width: 100%;
+	}
 	.address-list{
 		display: block;
 	}
