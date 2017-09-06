@@ -3523,7 +3523,7 @@ div.photogal {
 	transform: translateY(0);
 }
 .gallery-two-coloms.opalubki-grid .gallery-item:hover .block-btn{
-	display: none;
+	z-index: 10;
 }
 .gallery-two-coloms.opalubki-grid .gallery-item:hover .block-title{
 	display: none;
