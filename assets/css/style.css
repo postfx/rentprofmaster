@@ -939,6 +939,17 @@
 	padding: 13px 50px 13px 50px;
 }
 
+.lease-calc{
+	border-top: 1px solid #d1dae7;
+	margin: 93px 0 0 0;
+	padding: 29px 0 0 0;
+}
+.lease-calc .irs-single{
+	background: none !important;
+}
+.lease-calc .calc__title{
+	font-size: 23px;
+}
 .advantages_inner {
 	background-image:url(../img/fon_adv.jpg);
 	background-position: 0 50%;
@@ -2082,7 +2093,10 @@ th {font-size: 14px; color: #587299;}
 .characteristic-info .quest_block.asd{
 	font-style: normal;
 	margin: 0;
-	 padding: 28px 20px 2px;
+	padding: 28px 20px 2px;
+}
+.quest_block.asd{
+	font-size: 13px;
 }
 .boxpad .quest_block .row,
 .characteristic-info .quest_block .row{
@@ -2116,6 +2130,10 @@ th {font-size: 14px; color: #587299;}
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -20px;
+}
+.faqpage .faq-list.width_box .faq-item{
+	width: 48%;
+	margin: 0 8px 45px;
 }
 .faqpage .faq-item {
 	margin: 0 10px 45px;
@@ -2289,6 +2307,25 @@ background: linear-gradient(to bottom, #4e5d74 0px,#667b9a 48px, #4e5d74 96px);
 	padding: 0 30px;
 }
 
+.boxproductinfo.altproduct{
+	padding: 20px 0;
+	background: #f1f4f8;
+}
+.boxproductinfo.altproduct .sheme-block-image{
+	display: flex;
+	justify-content: space-between;
+}
+.boxproductinfo.altproduct .sheme-img{
+	background: #fff;
+	min-height: 182px;
+	margin-bottom: 35px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	width: 49%;
+}
+
 .boxproductinfo .aside .txtaside p {padding:15px 0; font-size: 13px; }
 
 .boxproductinfo .aside .quest_block {background: #f6f6f6;color: #757575;}
@@ -2297,7 +2334,7 @@ background: linear-gradient(to bottom, #4e5d74 0px,#667b9a 48px, #4e5d74 96px);
     min-height: 30px;
     background:none;
     color: #6b81a0;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     padding-left: 0;
     margin-bottom: 0;
@@ -2339,6 +2376,9 @@ background: linear-gradient(to bottom, #4e5d74 0px,#667b9a 48px, #4e5d74 96px);
 }
 .executed-works{
 	background: #e1e8f2;
+}
+.executed-works.bg_lightgray{
+	background: #f1f4f8;
 }
 .contentbox h2 {padding:2px 15px; font-size: 25px; font-weight: bold;}
 .contentbox .table {margin-bottom: 0px;}
@@ -2405,6 +2445,34 @@ td.colorgr{font-size: 16px; font-weight: bold; color: #55a561; width: 145px;}
 	background: #fff;
 	padding: 17px 22px 20px;
 }
+.boxtwodel .lftdel.arrow{
+	position: relative;
+}
+.boxtwodel .lftdel.arrow:after{
+	content: '';
+	position: absolute;
+	bottom: 95px;
+	right: -10px;
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #e6ebf3;
+	z-index: 1;
+}
+.about_cost{
+	margin: 50px 0 0 0;
+	display: flex;
+}
+.about_cost .cost-col{
+	width: 30%;
+	margin: 0 10px 0 0;
+	display: inline-table;
+}
+.about_cost .cost-col:last-child{
+	width: 62%;
+	display: inline-table;
+}
 .boxsmalltxt ul li span, .lftdel ul li span { color: #3d3d3d; font-size: 14px;}
 .boxsmalltxt ul li span b {color: #58a864;}
 .txtbox14 p {font-size: 14px;}
@@ -2416,7 +2484,7 @@ td.colorgr{font-size: 16px; font-weight: bold; color: #55a561; width: 145px;}
 .boxtwodel .lftdel {  background: #e6ebf3; padding:20px 40px;  }
 .boxtwodel .rghtdel {background: #fff;padding: 20px 40px;}
 .lftdel h3 { font-size: 28px; font-weight: bold; color: #5b7496; background: url(../img/del_ic.png) no-repeat left center; padding-left: 65px;  }
-.lftdel h3.pay { font-size: 28px; font-weight: bold; color: #5b7496; background: url(../img/pay_tit.png) no-repeat left center; padding-left: 65px;  }
+.lftdel h3.pay { font-size: 28px; text-transform: uppercase; font-weight: bold; color: #5b7496; background: url(../img/pay_tit.png) no-repeat left center; padding-left: 65px;  }
 p.pricedel { font-size: 35px; color:#57a863; }
 p.pricedel span {font-size: 18px;}
 p.bluetxt {color: #345d99; font-size: 15px; font-weight: bold; padding-top: 15px;}
@@ -2899,7 +2967,7 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 }
 .characteristic-info-table tbody th,
 .characteristic-info-table tbody td{
-	padding: 9px 25px;
+	padding: 14px 25px;
 }
 .characteristic-info-table tbody tr{
 	border-bottom: 1px solid #e6ebf3;
@@ -2969,6 +3037,13 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 .scheme-info-text{
 	font-size: 14px;
 	line-height: 23px;
+}
+.scheme-info-text.small{
+	font-size: 13px;
+	line-height: 19px;
+}
+.scheme-info-text.small p{
+	margin: 0 0 20px;
 }
 .scheme-info-text p{
 	margin-bottom: 54px;
@@ -3419,7 +3494,9 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 	box-shadow: 3px 3px 6px #d8dbdf;
 	align-items: center;
 }
-
+.boxcol-two.box-bg{
+	background: #fff;
+}
 .boxcol-two .imgcol {
 	width: 45%;
 	top: auto;
@@ -3449,11 +3526,16 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 .boxtwodel {
 	box-shadow: 3px 3px 7px #e6e9ec;
 }
-
+.boxtwodel.flex-box{
+	display: flex;
+}
 div.photogal {
 	background: #f1f4f8;
 }
-
+.section-gray{
+	background: #f1f4f8;
+	padding: 0 0 35px;
+}
 .gallery-two-coloms {
 	display: flex;
 	flex-direction: row;
@@ -3517,6 +3599,45 @@ div.photogal {
 	background: #71c17d;
 	width: 9px;
 	height: 9px;
+}
+.rent-price{
+	background: #fff;
+	box-shadow: 0px 1px 2px #ccc;
+	border-radius: 5px;
+	padding: 1px 22px 15px;
+	margin: 10px 0 0 0;
+}
+.rent-price h3{
+	margin: 20px 0 22px;
+}
+.rent-price .colorBlue{
+	margin: 0 0 10px;
+}
+.rent-price p{
+	font-size: 13px;
+}
+.list-price{
+	list-style: none;
+	margin: 0 0 20px;
+	padding: 0 0 0 5px;
+	color: #3d3d3d;
+	font-size: 14px;
+	line-height: 24px;
+	list-style: none;
+}
+.list-price li{
+	position: relative;
+	padding: 0 0 0 16px;
+}
+.list-price li:after{
+	content: '';
+	position: absolute;
+	top: 12px;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	background: #56a762;
+	transform: translate(-50%,-50%);
 }
 .opalubki-grid .gallery-item .gallery-hide .item-dscr .list li a{
 	color: #fff;
@@ -3747,7 +3868,7 @@ div.photogal {
 }
 
 .block-title {
-/*   box-shadow: 3px 3px 6px #d8dbdf;*/
+   box-shadow: 3px 3px 6px #d8dbdf;
    z-index: 1;
    position: relative;
 }
@@ -3827,6 +3948,9 @@ td.colorBlue,
 
 
 @media (max-width:768px) {
+	.boxtwodel{
+		display: block;
+	}
 	section.calc .calc_width{
 		width: 100%;
 	}
