@@ -83,10 +83,10 @@ $('.executed-works-slider').slick({
     });
     var typesHutsSlider = document.querySelector('.types-huts-slider');
     if(typesHutsSlider) {
-        var typesHutsViewProduct = typesHutsSlider.querySelectorAll('.types-huts-view__product');
+        var typesHutsViewProduct = typesHutsSlider.querySelectorAll('.types-huts-view__inner');
         for (var i = 0; i < typesHutsViewProduct.length; i++) {
             var h = typesHutsViewProduct[i].clientWidth;
-            typesHutsViewProduct[i].style.cssText +="height:"+ h +"px;";
+            typesHutsViewProduct[i].style.cssText +="height:"+ h +"px; width:"+ h +"px";
 
         }
         window.addEventListener('resize', function () {

@@ -142,7 +142,6 @@
 .header_menu .nav .dropdown > a.active span{
 	background: #43924e;
 }
-
 .nav {
 	position: relative;
 }
@@ -157,7 +156,16 @@
 .nav > .dropdown-full:hover .dropdown-menu, .nav > .dropdown:hover .dropdown-menu{
 		display: block;
 }
-
+.nav > .dropdown:hover{
+	background: -moz-linear-gradient(top, rgba(76,152,87,1) 0%, rgba(88,171,100,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(76,152,87,1) 0%,rgba(88,171,100,1) 100%);
+	background: linear-gradient(to bottom, rgba(76,152,87,1) 0%,rgba(88,171,100,1) 100%);
+}
+.nav > .dropdown-full:hover{
+	background: -moz-linear-gradient(top, rgba(76,152,87,1) 0%, rgba(88,171,100,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(76,152,87,1) 0%,rgba(88,171,100,1) 100%);
+	background: linear-gradient(to bottom, rgba(76,152,87,1) 0%,rgba(88,171,100,1) 100%);
+}
 .nav li a span {
 	margin-left: 10px;
 }
@@ -559,7 +567,7 @@
 	z-index: 1;
 }
 
-.nav > li > a:after {
+/*.nav > li > a:after {
 	position: absolute;
 	content: '';
 	width: 0;
@@ -572,7 +580,7 @@
 	border-right: 7px solid transparent;
 	border-bottom: 9px solid #53c363;
 	opacity: 0;
-}
+}*/
 
 .nav > .open >a:after {
 	opacity: 1;
@@ -1709,11 +1717,13 @@ select.form-control{
 	position: absolute;
 	left:0;
 	top:1.5px;
-}
-.checkbox:checked + label:before{
 	background-image:url(../img/check-green.png);
 	background-position:center;
 	background-repeat:no-repeat;
+}
+.checkbox:checked + label:before{
+	background-image: none;
+
 }
 
 .form-selected{
@@ -1969,7 +1979,7 @@ section.bgnimf {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 9px 70px 9px 66px;
+    padding: 9px 90px 9px 66px;
 	min-height: 49px;
     line-height: 16px;
     color: #6b81a0;
@@ -3328,15 +3338,17 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 .types-huts .types-huts-block .types-huts-slider .types-huts-view__product img {
 	max-width: 215px;
 	max-height: 161px;
-
-	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 .types-huts-view__inner {
-	position: absolute;
-	top:50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 40px;
+	position: relative;
+	border-radius: 50%;
 }
 
 .types-huts-view__product a:hover,
@@ -3345,12 +3357,12 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 	transition: color ease-in-out .25s;
 }
 
-.types-huts-block .types-huts-slider .types-huts-view__product {
+/*.types-huts-block .types-huts-slider .types-huts-view__product {
 	background-color: #fff;
 	border-radius: 50%;
 
 }
-
+*/
 
 .types-huts .slick-initialized .slick-slide,
 .executed-works .slick-initialized .slick-slide {
