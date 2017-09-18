@@ -1559,6 +1559,7 @@ section.bggray {
 	transform: translateY(-100%);
 	transition: all 0.3s linear;
 	display: flex;
+	width: 100%;
 }
 .about-equipment .list-box img{
 	position: absolute;
