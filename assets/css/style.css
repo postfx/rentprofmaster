@@ -2496,7 +2496,7 @@ background: linear-gradient(to bottom, #4e5d74 0px,#667b9a 48px, #4e5d74 96px);
 }
 
 .boxaction {background: #57a863; border-radius: 0px 0px 3px 3px; padding: 10px;}
-.boxaction h3 {
+.boxaction h3{
     font-size: 19px;
     color: #fff;
     font-weight: bold;
@@ -2505,6 +2505,18 @@ background: linear-gradient(to bottom, #4e5d74 0px,#667b9a 48px, #4e5d74 96px);
     width: 250px;
     margin: 0px auto;
     padding: 15px 5px 25px 49px;
+}
+.boxaction .boxaction-title {
+    font-size: 19px;
+    color: #fff;
+    font-weight: bold;
+    background: url(../img/staric.png) no-repeat left 17px;
+    border-bottom: 1px solid #499955;
+    width: 250px;
+    margin: 0px auto;
+    padding: 15px 5px 25px 49px;
+    display: block;
+    line-height: 1.2;
 }
 .boxaction p {font-size: 14px; color: #fff; text-align: center; padding-top: 10px;}
 .contentbox.nonbg {background: none;}
@@ -2543,6 +2555,7 @@ td.typepro {
 
 }
 h2 {color: #5b7496; text-align: left;font-weight: bold; font-size: 22px;}
+.title-h2 {color: #5b7496; text-align: left;font-weight: bold; font-size: 22px; display: block; margin-top: 20px; margin-bottom: 10px;}
 h3 {font-size: 20px; padding-left: 0;}
 h4 {font-weight: bold;}
 .contentbox td {line-height: 18px !important;vertical-align: middle !important;}
@@ -3360,7 +3373,6 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 	justify-content: space-between;
 	margin: 0 10px;
 	min-height: 460px;
-	background: url(../img/bit_img_2.jpg) no-repeat center top;
 	position: relative;
 	padding: 20px 50px 40px;
 }
@@ -3383,9 +3395,10 @@ section.calc_scaffold .col-md-3.calc_scaffold-info{
 }
 .slick-initialized .slick-slide img{
 	width: 100%;
-	max-width: 300px;
-	max-height: 207px;
-	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .slick-initialized .slick-slide .block-title{
 	color: #fff;
@@ -3733,15 +3746,11 @@ div.photogal {
 	box-shadow: none;
 }
 .gallery-two-coloms.opalubki-grid .gallery-item img{
-	max-width: 286px;
-	max-height: 284px;
 	position: absolute;
-	bottom: 0;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%,0);
-}
-.gallery-two-coloms.opalubki-grid.subsection .gallery-item img {
-	max-width: 385px;
+	transform: translate(-50%,-50%);
+	width: 100%;
 }
 .gallery-two-coloms.opalubki-grid .gallery-item .gallery-hide{
 	    position: absolute;
@@ -3883,9 +3892,11 @@ div.photogal {
 
 .gallery-two-coloms .gallery-item img {
     width: 100%;
-    max-width: 300px;
-    max-height: 207px;
     margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .gallery-grid {
@@ -3899,9 +3910,8 @@ div.photogal {
     flex-direction: column;
     justify-content: space-between;
     min-height: 460px;
-    background: url(../img/bit_img_2.jpg) no-repeat center top;
     position: relative;
-	 	padding: 20px 40px;
+	padding: 20px 40px;
 }
 
 .gallery-two-coloms .gallery-item .block-btn {
