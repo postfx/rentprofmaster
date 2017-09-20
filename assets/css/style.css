@@ -27,6 +27,8 @@
 
 .container {
 	max-width: 960px;
+	position: relative;
+	z-index: 1;
 }
 
 .container940 {
@@ -535,7 +537,7 @@
 
 .dropdown-menu h4 a {
 	display: block;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 	font-family: 'Seravek-Bold', sans-serif;
 	font-weight: 700;
 	color: #fff;
@@ -1950,7 +1952,22 @@ section.steps .steps-title {text-align: center; color: #fff; font-size: 28px; te
 .boxheadrev {border-bottom: 1px solid #ccc; padding-bottom: 15px; margin-bottom: 15px;}
 
 
-.arend_b { background: #f1f1f1 url(../img/bg_arend_b.jpg) repeat-x center top; min-height: 384px; }
+.arend_b { 
+	/*background: #f1f1f1 url(../img/bg_arend_b.jpg) repeat-x center top; */
+	background: #f1f1f1;
+	border-bottom: 13px solid #d6d6d6;
+	min-height: 384px; 
+	position: relative;
+}
+.arend_b:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 71px;
+	left: 0;
+	right: 0;
+	background: #e3e3e3;
+}
 .boximg_a_b {
     display: block;
     margin-top: 80px;
@@ -4192,6 +4209,28 @@ td.colorBlue,
 @media (max-width:767px) {
 	.boxtwodel{
 		display: block;
+	}
+	.aboutbox:after{
+		display: none;
+	}
+	.arend_b{
+		padding: 0 0 30px;
+	}
+	.brdrt{
+		padding-right: 0;
+	}
+	.advantages_two.liblue{
+		padding: 0;
+	}
+	.boxtxt_a_b{
+		margin-top: 44px;
+	}
+	.boxtxt_a_b h1{
+		font-size: 27px;
+		line-height: 43px;
+	}
+	.boxtxt_a_b a.morelnk{
+		top: 0;
 	}
 	.about-equipment .list-box{
 		width: 100%;
