@@ -71,6 +71,7 @@
 .mob a {
 	font-size: 20px;
 	color: #000;
+	font-weight: normal;
 }
 
 .button {
@@ -650,7 +651,9 @@
 		border-bottom: 1px solid #acecb5;
 		background-color: transparent;
 	}
-
+	.billboard_inner{
+		padding: 0 0 8px;
+	}
 	.billboard_inner h2 {
 		font-family: 'Seravek-Bold', sans-serif;
 		font-size: 27px;
@@ -5048,7 +5051,12 @@ li.sheme a:focus {
 	}
 }
 
-
+.modal.modal-form .modal-dialog{
+	width: 770px;
+}
+.modal.modal-form .modal-dialog .form{
+	padding: 30px 0 0 0;
+}
 .modal.order .modal-dialog {
 	position: absolute;
 	top: 50%;
