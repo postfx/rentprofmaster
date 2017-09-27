@@ -1027,12 +1027,21 @@
 		font-size: 23px;
 	}
 	.advantages_inner {
-		background-image:url(../img/fon_adv.jpg);
+	/*	background-image:url(../img/fon_adv.jpg);*/
 		background-position: 0 50%;
 		background-repeat: no-repeat;
 		min-height: 590px;
+		position: relative;
 	}
-
+	.advantages_inner:after{
+		content:'';
+		position: absolute;
+		top: 0;
+		left: -50%;
+		bottom: 0;
+		width: 100%;
+		background: #eef1f4;
+	}
 	.advantages_inner h2 {
 		font-family: 'Seravek-Bold', sans-serif;
 		font-weight: 400;
@@ -1148,10 +1157,22 @@
 
 	.phone_inner {
 		min-height: 170px;
-		background-image:url(../img/fon_phone.jpg);
-		background-size: cover;
+		/*	background-image:url(../img/img-bg.jpg);*/
+		/*	background-size: cover;*/
+		background: #7289c6;
+		position: relative;
 	}
-
+	.phone_inner:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: -moz-radial-gradient(center, ellipse cover, rgba(137,166,241,0.55) 1%, rgba(133,163,237,0.55) 5%, rgba(30,87,153,0) 100%);
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(137,166,241,0.55) 1%,rgba(133,163,237,0.55) 5%,rgba(30,87,153,0) 100%);
+		background: radial-gradient(ellipse at center, rgba(137,166,241,0.55) 1%,rgba(133,163,237,0.55) 5%,rgba(30,87,153,0) 100%);
+	}
 	.phone_inner p {
 		font-family: 'Seravek-Bold', sans-serif;
 		font-weight: 400;
@@ -1176,9 +1197,14 @@
 		font-weight: 400;
 		font-size: 22px;
 		color: #fff;
-		margin-right: 25px
+		margin-right: 20px
 	}
-
+	.phone_inner .img-tel{
+		position: absolute;
+		bottom:0;
+		left: 0;
+		bottom: -12px;
+	}
 	.button_phone{
 		background-color: #5bc76b;
 		font-family: 'Seravek-Bold', sans-serif;
@@ -3915,7 +3941,7 @@ p.infoic {
 		.slick-slider .slick-next,
 		.slick-slider .slick-prev{
 			position: absolute;
-			top: 50%;
+			top: 45%;
 			transform: translateY(-50%);
 			left: -70px;
 			width: 50px;
@@ -4057,8 +4083,8 @@ p.infoic {
 
 
 		.types-huts .types-huts-block .types-huts-slider .types-huts-view__product img {
-			max-width: 215px;
-			max-height: 161px;
+			max-width: none;
+			max-height: none;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -4070,6 +4096,9 @@ p.infoic {
 			padding: 40px;
 			position: relative;
 			border-radius: 50%;
+			overflow: hidden;
+			border: 5px solid #fff;
+			box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
 		}
 
 		.types-huts-view__product a:hover,
@@ -5053,9 +5082,30 @@ li.sheme a:focus {
 
 .modal.modal-form .modal-dialog{
 	width: 770px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.modal.modal-form .modal-dialog .modal-body{
+	padding: 0;
+}
+.modal.modal-form .modal-dialog .close{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	z-index: 10;
+	font-size: 49px;
+	color: #adb9cb;
+	font-weight: normal;
+	opacity: 0.7;
+	text-shadow: none;
 }
 .modal.modal-form .modal-dialog .form{
-	padding: 30px 0 0 0;
+	padding: 0;
+}
+.modal.modal-form .modal-dialog .form form{
+	margin: 0;
 }
 .modal.order .modal-dialog {
 	position: absolute;
