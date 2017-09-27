@@ -1393,7 +1393,7 @@
 
 	.li_left {
 		float: left;
-		margin-right: 85px;
+		margin-right: 70px;
 	}
 
 	.block_one li {
@@ -1414,7 +1414,7 @@
 
 	.block_two ul {
 		list-style: none;
-		margin-left: 50px;
+		/*margin-left: 50px;*/
 	}
 
 	.block_two li {
@@ -1443,7 +1443,7 @@
 		color: #6ac978 !important;
 		font-size: 14px !important;
 		border-bottom: 1px solid #6ac978;
-		margin-bottom: 35px;
+		margin-bottom: 28px;
 		max-width: 85px;
 	}
 
@@ -1501,6 +1501,16 @@
 	.txtpay {
 		padding: 40px 35px;
 		line-height: 22px;
+	}
+	.title-foot{
+		font-family: 'Seravek-Bold', sans-serif;
+		    font-weight: 400;
+		    font-size: 16px;
+		    color: #fff;
+		    margin-top: 45px;
+		    margin-bottom: 30px;
+		    text-transform: uppercase;
+		    display: block;
 	}
 	.pybox { font-size: 18px; color: #5e7698; margin-bottom: 15px; height: 56px; padding-left: 75px; line-height: 50px; }
 	.txtpay h3 {margin-bottom: 25px; font-size: 25px;}
@@ -4819,6 +4829,39 @@ td.colorBlue,
 
 
 @media (max-width:767px) {
+	.header_inner {
+		text-align: center;
+	}
+	.header_inner .button a{
+		margin: 0 auto 20px;
+	}
+	.dropdown-menu h4 a{
+		margin-bottom: 15px;
+	}
+	.dropdown-menu li {
+		display: block;
+	}
+	.dropdown-menu:after{
+		display: none;
+	}
+	.dropdown_menu_one{
+		border: none;
+		padding-top: 5px;
+	}
+	.dropdown_menu_two{
+		border: none;
+		background-color: #374456;
+		padding-top: 0;
+	}
+	.dropdown_menu_three{
+		border: none;
+		padding-top: 5px;
+	}
+	.dropdown-full .dropdown_menu_one,
+	.dropdown-full .dropdown_menu_two,
+	.dropdown-full .dropdown_menu_three{
+		width: 100%;
+	}
 	.boxtwodel{
 		display: block;
 	}
