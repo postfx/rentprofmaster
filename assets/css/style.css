@@ -4829,7 +4829,7 @@ td.colorBlue,
 
 
 @media (max-width:767px) {
-	.header_inner {
+	.header_inner{
 		text-align: center;
 	}
 	.header_inner .button a{
