@@ -2754,6 +2754,7 @@
 		margin: 0;
 		border-radius: 3px;
 		box-shadow: 0px 1px 2px #ccc;
+		min-height: 360px;
 	}
 	.bgf8 {background: #f8fafd; padding:35px; font-size: 14px; border-radius: 0px 3px 3px 0px}
 	.bgf8 p {margin-bottom: 15px;}
@@ -2779,6 +2780,7 @@
 		margin: 0;
 		border-radius: 3px;
 		box-shadow: 0px 1px 2px #ccc;
+		min-height: 360px;
 	}
 	.bgf8 {background: #f8fafd; padding:35px; font-size: 14px; border-radius: 0px 3px 3px 0px}
 	.bgf8 p {margin-bottom: 15px;}
@@ -2825,6 +2827,8 @@
 	.imgcol-center {
 		top: 50%;
 		transform: translateY(-50%);
+		width: 100%;
+		padding: 15px 0px;
 	}
 	.imgcol-centerimg{
 		position: absolute;
