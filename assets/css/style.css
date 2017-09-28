@@ -4767,13 +4767,59 @@ td.colorBlue,
 	color: #6f8098;
 	font-size: 16px;
 }
-
+.two-columns_text ul li{
+	position: relative;
+	list-style: none;
+	padding: 0 0 0 20px;
+}
+.two-columns_text ul li:before{
+	content: '';
+	position: absolute;
+	top: 12px;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	background: #56A762;
+}
 .two-columns_text {
 	padding: 35px 40px;
 	box-shadow: 0px 3px 6px #d8dbdf;
 }
 .two-columns_text p {
-	font-size: 13px;
+	font-size: 14px;
+	line-height: 24px;
+}
+.two-columns_text ol{
+	counter-reset: item;
+	list-style: none;
+	font-size: 14px;
+}
+.two-columns_text ol:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+.two-columns_text ol li {
+	position: relative;
+	padding: 0 0 0 40px;
+	margin: 0 0 12px;
+}
+.two-columns_text ol li span:before{
+	content: counter(item);
+		position: absolute;
+		text-align: center;
+		top: -1px;
+		left: 0;
+		width: 28px;
+		height: 30px;
+		background-color: #A9C1E0;
+		counter-increment: item;
+		color: #fff;
+		display: block;
+		border-radius: 2px;
+		font-size: 14px;
+		font-weight: bold;
+		padding: 4px 0 0 0;
 }
 
 .col-img {
