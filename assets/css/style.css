@@ -652,7 +652,7 @@
 		background-color: transparent;
 	}
 	.billboard_inner{
-		padding: 0 0 8px;
+		padding: 0 0 13px;
 	}
 	.billboard_inner h2 {
 		font-family: 'Seravek-Bold', sans-serif;
@@ -729,6 +729,8 @@
 
 	.billboard_inner .row-flex{
 		display: flex;
+		margin-right: 0;
+		margin-left: 0;
 	}
 	.billboard_inner .billboard-item{
 		display: flex;
@@ -1201,9 +1203,8 @@
 	}
 	.phone_inner .img-tel{
 		position: absolute;
-		bottom:0;
 		left: 0;
-		bottom: -12px;
+		bottom: -26px;
 	}
 	.button_phone{
 		background-color: #5bc76b;
@@ -5237,7 +5238,7 @@ td.colorBlue,
 }
 .contact-skype{
 	text-align: left;
-	margin: 0 35px;
+	margin: 0 20px;
 }
 .contact-skype:before {
 	display: inline-block;
