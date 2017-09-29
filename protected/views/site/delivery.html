@@ -100,7 +100,51 @@
 			</ul> 
 		</div>
 	</div>
-	<div class="block-calcs">
+<div class="container">
+	<div class="tabs__content-block">
+	<div class="tabs__content-box">
+	<div class="tabs__content-box--wrap">
+	<h3>Офис</h3>
+	
+	<p>223454, г. Санкт-Петербург, ул. Белоостровская, д.22, оф.14</p>
+	
+	<p>Время работы: c 9:00 до 19:00</p>
+	
+	<ul class="contact-wrap">
+		<li><a href="tel:89993455454">8 (999) 345-54-54</a></li>
+		<li><a href="tel:89993455454">8 (999) 345-54-54</a></li>
+	</ul>
+	<a class="contact-email" href="malto:info@pmg.su">info@pmg.su</a></div>
+	
+	<ul class="contact-bottom">
+		<li><a class="contact-skype" href="#">Konstantin </a></li>
+		<li class="sheme"><a class="download-map" download="" href="#">Скачать схему проезда </a></li>
+	</ul>
+	</div>
+	
+	<div class="tabs__content-box">
+	<div class="tabs__content-box--wrap">
+	<h3>Склад</h3>
+	
+	<p>223454, г. Санкт-Петербург, ул. Белоостровская, д.22, оф.14</p>
+	
+	<p>Время работы: c 9:00 до 19:00</p>
+	
+	<ul class="contact-wrap">
+		<li><a href="tel:89993455454">8 (999) 345-54-54</a></li>
+		<li><a href="tel:89993455454">8 (999) 345-54-54</a></li>
+	</ul>
+	<a class="contact-email" href="malto:info@pmg.su">info@pmg.su</a></div>
+	
+	<ul class="contact-bottom">
+		<li><a class="contact-skype" href="#">Konstantin </a></li>
+		<li class="sheme"><a class="download-map" download="" href="#">Скачать схему проезда </a></li>
+	</ul>
+	</div>
+	</div>
+</div>
+
+<!-- 	<div class="block-calcs">
 			<div class="calc__select">
 			            <select name="delivery" id="delivery4">
 			                <option value="1">Выбор способа доставки</option>
@@ -119,7 +163,7 @@
 			    		<p class="bluetxt">Стоимость доставки Камаз до Тихвани</p>
 			    		<p class="pricedel">20 000 <span>рублей</span></p>
 			    	</div>
-	</div>
+	</div> -->
 
 	<div class="tabs__content tabs__content_active" id="boxcont1">
 	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aee1f9c4409030d2f2f0c903ff80b191ae831c927f1b2b19c23d3d40fda7e5a3b&amp;width=100%25&amp;height=666&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -234,7 +278,16 @@
 </section>
 
 
-
+<script type="text/javascript">
+  var myMap;
+  ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
+  function init () {
+    myMap = new ymaps.Map("map", {
+      center: [55.76, 37.64], // Координаты центра карты
+      zoom: 10 // Zoom
+    });
+  }
+</script>
 <script src="../../../assets/js/jquery-3.1.1.min.js"></script>
 <script src="../../../assets/js/bootstrap.min.js"></script>
 <script src="../../../assets/js/main.js"></script>

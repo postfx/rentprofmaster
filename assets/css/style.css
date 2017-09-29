@@ -2957,6 +2957,9 @@ line-height: 24px;
 list-style: none;
 padding: 0 0 0 5px;
 }
+.boxsmalltxt.btm ul{
+	color: #575c61;
+}
 .boxsmalltxt ul li, .lftdel ul li{
 	position: relative;
 	padding: 0 0 0 16px;
@@ -3430,11 +3433,64 @@ p.infoic {
 		.paginationbox ul li a { font-size: 17px; color: #a4bad8; font-weight:  bold;}
 		.paginationbox ul li.active {background: #a4bad8;}
 		.paginationbox ul li.active a {color: #fff}
-
+		.bggray ul{
+			font-size: 14px;
+			list-style-type: none;
+		}
+		.bggray ul li{
+			position: relative;
+			padding-left: 16px;
+		}
+		.bggray ul li:before{
+			content: '';
+			    position: absolute;
+			    top: 9px;
+			    left: 0;
+			    width: 8px;
+			    height: 8px;
+			    background: #56A762;
+		}
+		.boxpad.txt ol{
+			counter-reset: item;
+			list-style: none;
+			font-size: 14px;
+		}
+		.boxpad.txt ol li{
+			position: relative;
+			padding: 0 0 0 40px;
+		}
+		.boxpad.txt ol li:before{
+			content: counter(item);
+			    position: absolute;
+			    text-align: center;
+			    top: 7px;
+			    left: 0;
+			    width: 28px;
+			    height: 30px;
+			    background-color: #A9C1E0;
+			    counter-increment: item;
+			    color: #fff;
+			    display: block;
+			    border-radius: 2px;
+			    font-size: 14px;
+			    font-weight: bold;
+			    padding: 4px 0 0 0;
+		}
 		.maptabs {
 			position: relative;
 		}
+		.maptabs .tabs__content-block{
+			position: absolute;
+			top: 40px;
+			right: 0;
+		}
+		.tabs__content-box ul li:before{
+			display: none;
+		}
 		.maptabs li.tabs-list__item{ font-size: 15px; }
+		.maptabs li.tabs-list__item:before{
+			display: none;
+		}
 		.maptabs h3 {
 			color: #fff;
 			display: inline-block;
@@ -3448,7 +3504,7 @@ p.infoic {
 		.maptabs .linebgtabs {box-shadow: 0px 1px 2px #ccc}
 
 		.maptabs ul.tabs-list {
-			width: 70%;
+	/*		width: 70%;*/
 			float: right;
 			padding-top: 0;
 		}
@@ -4270,6 +4326,23 @@ p.infoic {
 	align-items: stretch;
 	min-height: 360px;
 }
+.boxcol-two ul{
+	font-size: 14px;
+	list-style-type: none;
+}
+.boxcol-two ul li{
+	position: relative;
+	padding: 0 0 0 20px;
+}
+.boxcol-two ul li:after{
+	content: '';
+	    position: absolute;
+	    top: 9px;
+	    left: 0;
+	    width: 8px;
+	    height: 8px;
+	    background: #56A762;
+}
 .boxcol-two_large{
 	min-height: 530px;
 }
@@ -4767,6 +4840,9 @@ td.colorBlue,
 	color: #6f8098;
 	font-size: 16px;
 }
+.two-columns_text ul{
+	font-size: 14px;
+}
 .two-columns_text ul li{
 	position: relative;
 	list-style: none;
@@ -4775,7 +4851,7 @@ td.colorBlue,
 .two-columns_text ul li:before{
 	content: '';
 	position: absolute;
-	top: 12px;
+	top: 9px;
 	left: 0;
 	width: 8px;
 	height: 8px;
@@ -5125,6 +5201,10 @@ td.colorBlue,
 .contact-bottom li a:focus {
 	text-decoration: underline;
 }
+.contact-skype{
+	text-align: left;
+	margin: 0 35px;
+}
 .contact-skype:before {
 	display: inline-block;
 	vertical-align: -2px;
@@ -5133,6 +5213,7 @@ td.colorBlue,
 	background: url(../img/contact-skype.png) no-repeat;
 	width: 15px;
 	height: 15px;
+	margin: 0 10px 0 0;
 }
 
 li.sheme a {
