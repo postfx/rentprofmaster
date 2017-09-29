@@ -2975,14 +2975,14 @@ padding: 0 0 0 5px;
 	transform: translate(-50%,-50%);
 }
 .lftdel ul li:after{
-	content: '';
+	/*content: '';
 	position: absolute;
 	top: 12px;
 	left: 0;
 	width: 8px;
 	height: 8px;
 	background: #56a762;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);*/
 }
 .boxsmalltxt ul li span{
 	display:inline-block;
@@ -3442,6 +3442,23 @@ p.infoic {
 			padding-left: 16px;
 		}
 		.bggray ul li:before{
+			content: '';
+			    position: absolute;
+			    top: 9px;
+			    left: 0;
+			    width: 8px;
+			    height: 8px;
+			    background: #56A762;
+		}
+		.boxpad.txt ul{
+			font-size: 14px;
+			list-style-type: none;
+		}
+		.boxpad.txt ul li{
+			position: relative;
+			padding: 0 0 0 20px;
+		}
+		.boxpad.txt ul li:before{
 			content: '';
 			    position: absolute;
 			    top: 9px;
@@ -4302,7 +4319,22 @@ p.infoic {
 	position: relative;
 	margin-bottom: 30px;
 }
-
+.section-info ul{
+	    list-style-type: none;
+}
+.section-info ul li{
+	position: relative;
+	padding: 0 0 0 20px;
+}
+.section-info ul li:before{
+	    content: '';
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #56A762;
+}
 .section-info .info {
 	padding: 40px;
 }
@@ -4880,7 +4912,7 @@ td.colorBlue,
 	padding: 0 0 0 40px;
 	margin: 0 0 12px;
 }
-.two-columns_text ol li span:before{
+.two-columns_text ol li:before{
 	content: counter(item);
 		position: absolute;
 		text-align: center;
@@ -5099,7 +5131,9 @@ td.colorBlue,
 	width: 71%;
 	padding:0;
 }
-
+.tabs-list li:before{
+	display: none;
+}
 .tabs__content-contact {
 	position: relative;
 	overflow: hidden;
