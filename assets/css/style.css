@@ -652,7 +652,7 @@
 		background-color: transparent;
 	}
 	.billboard_inner{
-		padding: 0 0 13px;
+		padding: 0 0 14px;
 	}
 	.billboard_inner h2 {
 		font-family: 'Seravek-Bold', sans-serif;
@@ -664,7 +664,36 @@
 		margin-left: 45px;
 		padding-top: 40px;
 	}
-
+	#map, #map2{
+		height: 670px;
+	}
+	.ymaps-2-1-55-balloon__close+.ymaps-2-1-55-balloon__content{
+		color: #fff;
+		background: #56a862;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 10px 17px 0 !important;
+		margin: 0 !important;
+		border-radius: 26px;
+	}
+	.ymaps-2-1-55-balloon__layout{
+		background: none !important;
+	}
+	.ymaps-2-1-55-balloon{
+		box-shadow: none !important;
+	}
+	.ymaps-2-1-55-balloon__close-button{
+		padding-right: 0!important;
+	}
+	.ymaps-2-1-55-balloon{
+		box-shadow: none;
+	}
+	.ymaps-2-1-55-balloon_to_top .ymaps-2-1-55-balloon__tail{
+		background: #56a862;
+	}
+	.ymaps-2-1-55-balloon__tail:after{
+		background: #56a862 !important;
+	}
 	.billboard_inner p {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 13px;
@@ -2117,7 +2146,6 @@
 		padding:20px 0;
 	}
 
-	<<<<<<< .mine
 	.catinfo {min-height: 228px; background: #fff;border-radius: 0px 0px 5px 5px;}
 	.catinfo.bgblock{
 		background: none;
@@ -2739,7 +2767,6 @@
 	.boxtabsprice .form {padding-bottom: 10px;}
 	.txtstyle p { font-size: 14px; margin-bottom: 15px;font-family: 'Open Sans', sans-serif; }
 
-	<<<<<<< .mine
 	.product_title {background: #fff; border-bottom: 1px solid #e0e3e6; padding:20px 0px }
 	.product_title h1 {
 		font-size: 26px;
@@ -3342,7 +3369,6 @@ p.infoic {
 	background:#e8ecf3 url(../img/info_ic.png) no-repeat left center;
 	height: 30px; padding:5px 5px 5px 35px; border-radius: 15px;}
 
-	<<<<<<< .mine
 	.avantwobox {clear: both; min-height: 300px;background: #fff;}
 	.avantwobox h2 {font-size: 26px; text-transform: uppercase;}
 	.avantwobox .lf6 {}
@@ -3496,6 +3522,7 @@ p.infoic {
 		}
 		.maptabs {
 			position: relative;
+			min-height: 700px;
 		}
 		.maptabs .tabs__content-block{
 			position: absolute;

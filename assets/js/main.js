@@ -44,6 +44,46 @@ $('.multiple-items').slick({
 
 
 
+ymaps.ready(init);
+    var myMap,
+    myPlacemark1;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [55.68978949, 37.94270800],
+            zoom: 12
+        });
+         myPlacemark1 = new ymaps.Placemark([55.69076640, 37.94929487], {
+          balloonContentHeader: 'Офис'
+              // balloonContentBody: '223454, г. Санкт-Петербург, ул. Белоостровская, д.22, оф.14'
+              // balloonContentFooter: 'Мы пошли в гору',
+              // hintContent: 'Зимние происшествия'
+        });
+          myMap.geoObjects.add(myPlacemark1);
+    }
+
+
+(function () {
+	ymaps.ready(init);
+    var myMap,
+    myPlacemark;
+
+    function init(){     
+        myMap = new ymaps.Map("map2", {
+            center: [59.98692906, 30.31738650],
+            zoom: 16
+        });
+           myPlacemark = new ymaps.Placemark([59.98692906, 30.31738650], {
+          balloonContentHeader: 'Офис'
+              // balloonContentBody: '223454, г. Санкт-Петербург, ул. Белоостровская, д.22, оф.14'
+              // balloonContentFooter: 'Мы пошли в гору',
+              // hintContent: 'Зимние происшествия'
+        });
+            myMap.geoObjects.add(myPlacemark);
+    }
+})();
+
+
 
 $('.executed-works-slider').slick({
   infinite: true,
