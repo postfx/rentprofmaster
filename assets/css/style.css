@@ -1827,6 +1827,7 @@
 		font-size: 13px;
 		padding: 20px 10% 70px;
 		line-height: 19px;
+		width: 100%;
 	}
 	.about-equipment .list-box-hide .list-box-dscr .save{
 		position: absolute;
@@ -3023,6 +3024,22 @@ padding: 0 0 0 5px;
 	background: none;
 	color: #58a864;
 	padding: 0;
+}
+.bg-delivery ul{
+	list-style: none;
+}
+.bg-delivery ul li{
+	position: relative;
+	padding: 0 0 0 20px;
+}
+.bg-delivery ul li:before{
+	content: '';
+	position: absolute;
+	top: 8px;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	background: #56A762;
 }
 .boxsmalltxt strong{
 	color: #8995a0;
@@ -4546,7 +4563,7 @@ div.photogal {
 }
 .rent-price ul li:before{
 	content: '';
-	position: absolute;
+	position: absolute; 
 	top: 11px;
 	left: 0;
 	width: 8px;
@@ -4560,7 +4577,23 @@ div.photogal {
 	margin: 0 0 10px;
 }
 .rent-price p{
-	font-size: 13px;
+	font-size: 16px;
+}
+.scheme-info-text.small ul{
+	list-style: none;
+}
+.scheme-info-text.small ul li{
+	padding: 0 0 0 20px;
+	position: relative;
+}
+.scheme-info-text.small ul li:before{
+	content: '';
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	background: #56A762
 }
 .list-price{
 	list-style: none;
@@ -4658,10 +4691,11 @@ div.photogal {
 .gallery-two-coloms .gallery-item {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+/*	justify-content: space-between;*/
 	min-height: 460px;
 	position: relative;
 	padding: 20px 40px;
+	background: #6b9bca;
 }
 
 .gallery-two-coloms .gallery-item .block-btn {
@@ -5020,6 +5054,28 @@ td.colorBlue,
 }
 
 @media (max-width:1024px){
+	.gallery-two-coloms .gallery-item, .slick-initialized .slick-slide{
+		background: #4d9dcd;
+	}
+	.slick-initialized .slick-slide .block-title{
+		order: 1;
+	}
+	.slick-initialized .slick-slide img{
+		order:2;
+		position: static;
+		transform: none;
+		margin: 0 0 20px;
+	}
+	.slick-initialized .slick-slide .block-btn{
+		width: 100%;
+		min-width: auto;
+		transform: none;
+		position: static;
+		order: 3;
+	}
+	.logo{
+		margin-left: 0;
+	}
 	.types-huts-block,
 	.executed-works-block {
 		padding: 0 90px;
@@ -5073,11 +5129,17 @@ td.colorBlue,
 	.header_inner{
 		text-align: center;
 	}
+	section.bread{
+		height: auto;
+	}
 	.mob li{
 		padding: 0;
 	}
 	.mob a{
 		font-size: 15px;
+	}
+	.block_one{
+		padding-left:0;
 	}
 	.block_two{
 		float: none;
