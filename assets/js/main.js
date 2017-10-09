@@ -37,7 +37,16 @@ d.slice(e-c+1,e+c+2).addClass("slick-active").attr("aria-hidden","false")),0===a
 $('.multiple-items').slick({
   infinite: true,
   slidesToShow: 2,
-  slidesToScroll: 2
+  slidesToScroll: 2,
+  responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
 });
 
 

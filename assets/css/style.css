@@ -700,7 +700,7 @@
 	}
 	.billboard_inner p {
 		font-family: 'Open Sans', sans-serif;
-		font-size: 13px;
+		font-size: 14px;
 		color: #fff;
 		margin-left: 45px;
 		margin-top: 15px;
@@ -768,7 +768,7 @@
 	.billboard_inner .billboard-item{
 		display: flex;
 		flex-direction: column;
-		background: #ccc;
+		background: #6a9bc9;
 		padding: 42px 10% 25px;
 		position: relative;
 		min-height: 460px;
@@ -845,7 +845,7 @@
 
 	.info_inner p {
 		font-family: 'Open Sans', sans-serif;
-		font-size: 13px;
+		font-size: 14px;
 		color: #c8d6f9;
 	}
 
@@ -930,13 +930,14 @@
 	.security_plus p {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 400;
-		font-size: 16px;
+		font-size: 14px;
 		color: #000;
 		margin-top: 55px;
 	}
 
 	.company_inner {
 		min-height: 510px;
+		overflow: hidden;
 	}
 
 	.company_inner hr {
@@ -973,6 +974,7 @@
 		font-weight: 600;
 		font-size: 17px;
 		color: #4867a0;
+		display:inline-block;
 	}
 	.done_inner {
 		min-height: 715px;
@@ -1015,6 +1017,7 @@
 		background-color: rgba(49, 54, 62, 0.9);
 		text-align: center;
 		display: none;
+		padding: 10px;
 	}
 
 	.block_inner:hover .block_none{
@@ -1033,7 +1036,7 @@
 	.block_none p {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 400;
-		font-size: 13px;
+		font-size: 14px;
 		color: #fff;
 		margin-top: 25px;
 		margin-bottom: 35px;
@@ -1048,6 +1051,7 @@
 		background-color: #51a05c;
 		border-radius: 22px;
 		padding: 13px 50px 13px 50px;
+		display: inline-block;
 	}
 
 	.lease-calc{
@@ -1094,8 +1098,8 @@
 	}
 
 	.advantages_one li{
-		margin-top: 20px;
-
+		margin-top: 0;
+		overflow: hidden;
 	}
 
 	.advantages_one span {
@@ -1116,7 +1120,7 @@
 	.advantages_one p {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 14px;
 		color: #2d394d;
 		padding-top: 25px;
 	}
@@ -1191,11 +1195,15 @@
 	}
 
 	.phone_inner {
-		min-height: 170px;
+		/*min-height: 170px;*/
 		/*	background-image:url(../img/img-bg.jpg);*/
 		/*	background-size: cover;*/
 		background: #7289c6;
 		position: relative;
+		padding: 53px 0 0 0;
+	}
+	.phone_inner .container{
+		display: flex;
 	}
 	.phone_inner:after{
 		content: '';
@@ -1213,7 +1221,7 @@
 		font-weight: 400;
 		font-size: 17px;
 		color: #fff;
-		margin-top: 60px;
+		margin: 0;
 	}
 
 	.phone_inner ul {
@@ -1232,12 +1240,17 @@
 		font-weight: 400;
 		font-size: 22px;
 		color: #fff;
-		margin-right: 20px
+		margin-right: 0;
+		margin-left: 0;
 	}
 	.phone_inner .img-tel{
 		position: absolute;
-		left: 0;
-		bottom: -26px;
+		bottom: 0;
+		left: 10px;
+	}
+	.phone_inner .inner-text{
+		padding: 0 0 45px 165px;
+		flex: 1;
 	}
 	.button_phone{
 		background-color: #5bc76b;
@@ -1250,8 +1263,7 @@
 		border-radius: 3px;
 		display: block;
 		max-width: 285px;
-		float: right;
-		margin-top: 60px;
+		margin-top: 10px;
 	}
 
 	.address_inner {
@@ -1560,7 +1572,7 @@
 		display: block;
 		margin-top: 14px;
 	}
-	ul.breadcrumbs li a {font-size: 13px; color: #929fb2;font-family: 'Open Sans', sans-serif;}
+	ul.breadcrumbs li a {font-size: 14px; color: #929fb2;font-family: 'Open Sans', sans-serif;}
 	.title h1 {font-size: 30px;}
 	section.abouthead {background: url(../img/about_head.jpg) no-repeat center top; height: 367px;background-size: 100% 100%; font-family: 'Open Sans', sans-serif;}
 	section.aboutbox p {font-size: 14px; line-height: 24px;}
@@ -2058,7 +2070,7 @@
 	}
 	.reviewbox .boxheadrev span {color: #687380; font-size: 14px;}
 
-	.reviewbox p {font-size: 13px; color: #3d3d3d; font-style: italic;}
+	.reviewbox p {font-size: 14px; color: #3d3d3d; font-style: italic;}
 	.boxheadrev {border-bottom: 1px solid #ccc; padding-bottom: 15px; margin-bottom: 15px;}
 
 
@@ -2097,7 +2109,7 @@
 
 	.txtboxq  {margin-bottom: 50px;}
 	.txtboxq h2, .txtboxq_l h2 { color: #fff; font-size: 27px; text-transform: uppercase;}
-	.txtboxq p, .txtboxq_l p { font-size: 13px; color: #cddef5; }
+	.txtboxq p, .txtboxq_l p { font-size: 14px; color: #cddef5; }
 	.imgboxq img {max-width: 100%;}
 	.txtboxq_l {
 		z-index: 1000;position: relative;
@@ -2229,7 +2241,7 @@
 		padding-left: 0;
 	}
 	.complinfbox h4 {color: #7789a6; font-size: 16px; font-weight: bold;}
-	.complinfbox ol li {list-style-position: inside; margin-bottom: 10px; font-size:13px; }
+	.complinfbox ol li {list-style-position: inside; margin-bottom: 10px; font-size:14px; }
 	.ctlnkbox .ctlnlinf {
 		background: url(../img/cat_inf_ic.png) no-repeat center top;
 		display: block;
@@ -2421,7 +2433,7 @@
 		padding-left: 0;
 	}
 	.complinfbox h4 {color: #7789a6; font-size: 16px; font-weight: bold;}
-	.complinfbox ol li {list-style-position: inside; margin-bottom: 10px; font-size:13px; }
+	.complinfbox ol li {list-style-position: inside; margin-bottom: 10px; font-size:14px; }
 	.ctlnkbox .ctlnlinf {
 		background: url(../img/cat_inf_ic.png) no-repeat center top;
 		display: block;
@@ -2568,7 +2580,7 @@
 		padding: 28px 20px 2px;
 	}
 	.quest_block.asd{
-		font-size: 13px;
+		font-size: 14px;
 	}
 	.boxpad .quest_block .row,
 	.characteristic-info .quest_block .row{
@@ -2717,7 +2729,7 @@
 	.boxwh_t .col-sm-6 {
 		padding: 10px 55px;
 	}
-	.boxwh_t .col-sm-6 p {font-size: 13px;}
+	.boxwh_t .col-sm-6 p {font-size: 14px;}
 
 	.boxtabsprice section.calc .container {max-width: 960px;}
 
@@ -2856,7 +2868,9 @@
 		position: relative;
 	}
 
-
+	.section-info p{
+		font-size: 14px;
+	}
 	.imgcol-center {
 		top: 50%;
 		transform: translateY(-50%);
@@ -2895,7 +2909,7 @@
 		width: 49%;
 	}
 
-	.boxproductinfo .aside .txtaside p {padding:15px 0; font-size: 13px; }
+	.boxproductinfo .aside .txtaside p {padding:15px 0; font-size: 14px; }
 
 	.boxproductinfo .aside .quest_block {background: #f6f6f6;color: #757575;}
 
@@ -3903,11 +3917,11 @@ p.infoic {
 		}
 		.scheme-info-text{
 			font-size: 14px;
-			line-height: 23px;
+			line-height: 24px;
 		}
 		.scheme-info-text.small{
-			font-size: 13px;
-			line-height: 19px;
+			font-size: 14px;
+			line-height: 24px;
 		}
 		.scheme-info-text.small p{
 			margin: 0 0 20px;
@@ -4386,6 +4400,7 @@ p.infoic {
 }
 .section-info .info {
 	padding: 40px;
+	font-size: 14px;
 }
 
 .section-info::after {
@@ -4577,7 +4592,7 @@ div.photogal {
 	margin: 0 0 10px;
 }
 .rent-price p{
-	font-size: 16px;
+	font-size: 14px;
 }
 .scheme-info-text.small ul{
 	list-style: none;
@@ -4695,7 +4710,7 @@ div.photogal {
 	min-height: 460px;
 	position: relative;
 	padding: 20px 40px;
-	background: #6b9bca;
+	background: #4c9dcd;
 }
 
 .gallery-two-coloms .gallery-item .block-btn {
@@ -5052,9 +5067,78 @@ td.colorBlue,
 	height: 8px;
 	background: #56A762;
 }
-
+@media (max-width:1260px){
+	.billboard_inner .billboard-item .block-btn{
+		width: 100%;
+		min-width: auto;
+	}
+}
+@media (max-width:1210px){
+	.phone_inner p{
+		margin: 0 !important;
+	}
+	.phone_inner ul li a{
+		margin: 0 !important;
+	}
+}
 @media (max-width:1024px){
-	.gallery-two-coloms .gallery-item, .slick-initialized .slick-slide{
+	.billboard_inner .billboard-item .block-btn{
+		min-width:auto;
+		width: 100%;
+	}
+	.billboard_inner .billboard-item .btn{
+		min-width: auto;
+	}
+	.advantages_inner h2{
+		font-size: 23px;
+		margin-bottom: 20px;
+	}
+	.phone_inner{
+		text-align: center;
+		padding: 20px 0;
+	}
+	.phone_inner .link-box{
+		display: flex;
+	}
+	.button_phone{
+		margin: 0 auto;
+	}
+	.phone_inner .inner-text{
+		padding: 0 0 5px;
+	}
+	.phone_inner .container{
+		display: block;
+	}
+	.phone_inner .col-sm-6{
+		width: 100%;
+	}
+	.phone_inner .img-tel{
+		position: static;
+		margin: 0 0 15px;
+	}
+	.phone_inner ul li a{
+		font-size: 20px;
+	}
+	.modal-dialog{
+		margin: 0;
+	}
+	.modal.modal-form .modal-dialog{
+		width: 600px;
+	}
+	.nav > .dropdown-full > .dropdown-menu{
+		margin-left: -19px !important;
+	}
+	.dropdown_menu_one > li > a,
+	.dropdown_menu_two > li > a,
+	.dropdown_menu_three > li > a{
+		white-space: normal;
+		margin-left: 15px;
+	}
+	.dropdown-menu h4 a{
+		white-space: normal;
+		margin-left: 15px;
+	}
+	.multiple-items.slick-initialized .slick-slide{
 		background: #4d9dcd;
 	}
 	.slick-initialized .slick-slide .block-title{
@@ -5074,7 +5158,7 @@ td.colorBlue,
 		order: 3;
 	}
 	.logo{
-		margin-left: 0;
+		margin-left: 0 !important;
 	}
 	.types-huts-block,
 	.executed-works-block {
@@ -5093,7 +5177,8 @@ td.colorBlue,
 		font-size: 16px;
 	}
 	.button{
-		padding-top: 18px;
+		padding-top: 9px !important;
+		padding-bottom: 9px !important;
 	}
 	.nav > li > a{
 		padding: 22px 20px;
@@ -5123,9 +5208,120 @@ td.colorBlue,
 		margin: -1px 20px 0 0;
 	}
 }
-
+@media (max-width:995px){
+	.block_none h3{
+		margin-top: 15px;
+		font-size: 14px;
+	}
+	.block_none p{
+		margin-top: 0;
+		margin-bottom: 15px;
+		font-size: 13px;
+	}
+}
 
 @media (max-width:767px) {
+	.dropdown_menu_one > li > a,
+	.dropdown_menu_two > li > a,
+	.dropdown_menu_three > li > a{
+		margin-left: 30px;
+	}
+	.block_none{
+		margin-right: 0 !important;
+	}
+	.block_inner{
+		display: block;
+		max-width: 280px;
+		margin: 0 auto;
+	}
+	.color_one span, .color_two span{
+		font-size: 50px;
+	}
+	.billboard_inner .billboard-info{
+		order: 1;
+		padding: 0 0 20px;
+	}
+	.billboard_inner .row-flex{
+		display: block;
+	}
+	.billboard_inner .billboard-item img{
+		position: static;
+		transform: none;
+		order: 2;
+		margin: 0 0 20px;
+	}
+	.billboard_inner .billboard-item .block-btn{
+		position: static;
+		transform: none;
+		order: 3;
+	}
+	.company_inner a{
+		margin: 0 0 20px;
+	}
+	.info_inner{
+		padding: 0 0 10px;
+	}
+	.done_inner{
+		text-align: center;
+	}
+	.done_inner .col-sm-4 {
+		width: auto !important;
+		margin: 0 auto 15px;
+	}
+	.billboard_inner .billboard-item{
+		margin: 0 0 20px;
+		padding: 42px 5% 25px;
+	}
+	.block_none p{
+		font-size: 13px;
+	}
+	.done_inner img{
+		max-width: 280px !important;
+	}
+	.block_none h3{
+		margin-top: 8px;
+	}
+	.security_inner h2{
+		font-size: 24px;
+		line-height: 29px;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	.security_plus h3{
+		margin-bottom: 0;
+	}
+	.security_plus p{
+		margin-top: 25px !important;
+	}
+	.billboard-info .price{
+		padding: 0 5px 0 0;
+	}
+	.advantages_one span{
+		margin-right: 25px;
+	}
+	.advantages_inner:after{
+		display: none;
+	}
+	.color_one, .color_two{
+		width: 100% !important;
+	}
+	.phone_inner li{
+		display: block;
+		margin: 0;
+	}
+	.phone_inner ul li:nth-child(2n){
+		display: none;
+	}
+	.calc_scaffold .row-flex{
+		display: block;
+	}
+	.slick-initialized .slick-slide{
+		padding: 20px 10px 30px;
+	}
+	.title-foot{
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
 	.header_inner{
 		text-align: center;
 	}
@@ -5139,10 +5335,10 @@ td.colorBlue,
 		font-size: 15px;
 	}
 	.block_one{
-		padding-left:0;
+		padding-left:0 !important;
 	}
 	.block_two{
-		float: none;
+		float: none !important;
 		padding-top: 0;
 	}
 	.header_inner .button a{
@@ -5232,7 +5428,7 @@ td.colorBlue,
 	}
 	.boxcol-two .imgcol {
 		width: 100%;
-		padding: 0 0 100px;
+		padding: 0 0 30px;
 	}
 	.boxcol-two .bgf8{
 		width: 100%;
@@ -5275,12 +5471,14 @@ td.colorBlue,
 		box-shadow: none;
 	}
 	.section-info .info {
-		padding: 40px 0;
+		padding: 10px 20px;
 	}
 }
 
-@media (max-width:480px) {
-
+@media (max-width:650px) {
+	.modal.modal-form .modal-dialog{
+		width: auto !important;
+	}
 }
 
 .linebgtabs-contacts ul.tabs-list {
@@ -5332,7 +5530,7 @@ td.colorBlue,
 }
 .tabs__content-box--wrap p {
 	color: #424242;
-	font-size: 13px;
+	font-size: 14px;
 }
 .contact-wrap {
 	list-style-type: none;
@@ -5423,8 +5621,48 @@ li.sheme a:focus {
 
 
 @media (max-width:767px) {
+	.video-list{
+		display: block;
+	}
+	.video-list-item{
+		width: 100%;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+	.video-list-title{
+		text-align: center;
+		font-size: 17px;
+	}
 	.boxpad{
 		padding: 30px 0;
+	}
+	.product_title{
+		padding: 20px;
+	}
+	.executed-works__img{
+		width: 150px;
+		height: 150px;
+		margin: 0 auto;
+	}
+	.types-huts-block, .executed-works-block{
+		padding: 0 75px;
+	}
+	.gallery-two-coloms .gallery-item .block-btn{
+		position: static;
+		transform: none;
+		min-width: auto;
+		width: 100%;
+	}
+	.gallery-two-coloms .gallery-item img{
+		position: static;
+		transform: none;
+		margin: 0 0 20px;
+	}
+	.informbox .bgphonead{
+		margin: 0;
+	}
+	.catinfo .row-flex{
+		display: block;
 	}
 	.boxphoneadr{
 		display: block;
@@ -5587,7 +5825,7 @@ li.sheme a:focus {
 	padding: 0;
 }
 .modal.modal-form .modal-dialog .form form{
-	margin: 0;
+	margin: -5px;
 }
 .modal.order .modal-dialog {
 	position: absolute;
