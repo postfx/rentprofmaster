@@ -1,5 +1,14 @@
 <?php
 	$this->pageTitle = Yii::app()->name;
+
+	$t = '';
+	if ($c->id == 1) {
+		$t = 'бытовок';
+	} elseif ($c->id == 2) {
+		$t = 'строительных лесов';
+	} elseif ($c->id == 3) {
+		$t = 'опалубки';
+	}
 ?>
 
 <section class="bread">
@@ -8,7 +17,7 @@
 			<ul class="breadcrumbs">
 				<li class="ic_home"><a href="/"></a></li>
 				<div class="sprt"></div>
-				<li><a href="/items">Комплектующие для опалубки</a></li>
+				<li><a href="/items">Комплектующие для <?php echo $t;?></a></li>
 				<div class="sprt"></div>
 			</ul>
 	</div>
@@ -18,7 +27,7 @@
 
 <div class="container">
 
-			<div class="title"><h1>Комплектующие для опалубки</h1></div>
+			<div class="title"><h1>Комплектующие для <?php echo $t;?></h1></div>
 
 </div>
 
@@ -91,12 +100,12 @@
 	<section class="address">
 		<div class="address_inner">
 			<div class="container">
-				<h2><img src="/assets/img/add.png" alt="img">Адреса офисов и складов</h2>
+				<span class="address-title"><img src="/assets/img/add.png" alt="img">Адреса офисов и складов</span>
 				<div class="row">
 					<?php foreach ($addresses as $a):?>
 					<div class="col-sm-3">
 						<div class="address_fone">
-							<h3><?php echo $a->type;?> <br><span><?php echo $a->city;?></span></h3>
+							<span class="premises"><?php echo $a->type;?> <br><span class="city"><?php echo $a->city;?></span></span>
 							<a class="address_tel" href="tel: <?php echo $a->phone;?>"><img src="/assets/img/add_phone.png" alt="img"><?php echo $a->phone;?></a>
 							<p><?php echo $a->addr;?></p>
 						</div>

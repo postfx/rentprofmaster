@@ -2,7 +2,33 @@
 	$this->pageTitle = Yii::app()->name;
 ?>
 
+
 <section class="billboard">
+	<div class="billboard_inner">
+		<div class="container-fluid">
+			<div class="row row-flex">
+
+				<?php $i = 1; foreach ($mainsections as $m):?>
+				<div class="col-sm-4">
+					<div class="billboard-item">
+						<img src="/uploads/mainsections/<?php echo $m->img;?>" alt="image description">
+						<div class="billboard-info">
+							<a href="<?php echo $m->url;?>"><h2><?php echo $m->title;?></h2></a>
+							<p><?php echo $m->descr;?></p>
+						</div>
+						<div class="block-btn">
+							<span class="price"><?php echo $m->price;?></span>
+							<a href="javascript:void(0)" class="btn" data-toggle="modal" data-target=".modal-form">Заказать</a>
+						</div>
+					</div>
+				</div>
+				<?php $i++; endforeach; ?>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--<section class="billboard">
 		<div class="billboard_inner">
 			<div class="container-fluid">
 				<div class="row">
@@ -20,7 +46,8 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>-->
+
 	<section class="info">
 		<div class="info_inner">
 			<div class="container">
@@ -54,7 +81,7 @@
 			<div class="container">
 				<h2>О надежности работы с нами <br>лучше всего <span>говорят цифры</span></h2>
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-md-3 col-sm-6">
 						<div class="color_one">
 							<span>5</span>
 							<hr>
@@ -62,7 +89,7 @@
 							<p>Компания на рынке <br>более 5 лет</p>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-md-3 col-sm-6">
 						<div class="color_two">
 							<span>200</span>
 							<hr>
@@ -70,7 +97,7 @@
 							<p>Более 200 клиентов <br>с которыми работаем</p>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-md-3 col-sm-6">
 						<div class="color_one">
 							<span>12</span>
 							<hr>
@@ -78,7 +105,7 @@
 							<p>Филиалов <br>в Санкт-Петербурге <br>и Москве</p>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-md-3 col-sm-6">
 						<div class="color_two">
 							<span>5</span>
 							<hr>
@@ -174,22 +201,17 @@
 			</div>
 		</div>
 	</section>
+
+
 	<section class="phone">
 		<div class="phone_inner">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-2"></div>
-					<div class="col-sm-6">
-						<p>Закажите расчет по телефону</p>
-						<ul>
-							<li><a class="tel" href="tel: 8 (495) 640-59-79">8 (495) 640-59-79</a></li>
-							<li>|</li>
-							<li><a class="tel" href="tel: 8 (495) 640-59-79">8 (495) 640-59-79</a></li>
-						</ul>
-					</div>
-					<div class="col-sm-4">
-						<a class="button_phone" href="#">Заказать расчет аренды</a>
-					</div>
+				<div class="img-tel"><img src="/assets/img/phone.png" alt="phone"></div>
+				<div class="inner-text">
+					<?php echo StaticBlock::get('footer_phones');?>
+				</div>
+				<div class="link-box">
+					<a class="button_phone" href="#" data-toggle="modal" data-target=".modal-form">Заказать расчет аренды</a>
 				</div>
 			</div>
 		</div>
@@ -197,12 +219,12 @@
 	<section class="address">
 		<div class="address_inner">
 			<div class="container">
-				<h2><img src="/assets/img/add.png" alt="img">Адреса офисов и складов</h2>
+				<span class="address-title"><img src="/assets/img/add.png" alt="img">Адреса офисов и складов</span>
 				<div class="row">
 					<?php foreach ($addresses as $a):?>
 					<div class="col-sm-3">
 						<div class="address_fone">
-							<h3><?php echo $a->type;?> <br><span><?php echo $a->city;?></span></h3>
+							<span class="premises"><?php echo $a->type;?> <br><span class="city"><?php echo $a->city;?></span></span>
 							<a class="address_tel" href="tel: <?php echo $a->phone;?>"><img src="/assets/img/add_phone.png" alt="img"><?php echo $a->phone;?></a>
 							<p><?php echo $a->addr;?></p>
 						</div>
