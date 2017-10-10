@@ -917,7 +917,7 @@
 		font-size: 25px;
 		color: #000;
 		margin-top: 40px;
-		margin-bottom: -15px;
+		margin-bottom: 30px;
 	}
 
 	.security_plus img {
@@ -932,9 +932,21 @@
 		font-weight: 400;
 		font-size: 14px;
 		color: #000;
-		margin-top: 55px;
 	}
-
+	.security-list{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.security-list li{
+		width: 50%;
+		padding: 0 15px 35px 0;
+	}
+	.security-list li .security-text{
+		overflow: hidden;
+	}
 	.company_inner {
 		min-height: 510px;
 		overflow: hidden;
@@ -5086,8 +5098,31 @@ td.colorBlue,
 		min-width:auto;
 		width: 100%;
 	}
+	.security_plus p{
+		margin-top: 0 !important;
+	}
+	.billboard_inner .container-fluid{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.boxaction .boxaction-title{
+		width: auto;
+	}
+	.executed-works__img{
+		margin: 0 auto;
+	}
+	.color_one, .color_two{
+		margin: 0 0 25px !important;
+	}
+	.color_one span, .color_two span{
+		font-size: 65px;
+	}
+	.billboard_inner .billboard-item h2{
+		font-size: 21px;
+	}
 	.billboard_inner .billboard-item .btn{
 		min-width: auto;
+		font-size: 13px;
 	}
 	.advantages_inner h2{
 		font-size: 23px;
@@ -5226,6 +5261,45 @@ td.colorBlue,
 	.dropdown_menu_three > li > a{
 		margin-left: 30px;
 	}
+	.block-title h1{
+		font-size: 22px;
+	}
+	.characteristic-info-table tbody th, .characteristic-info-table tbody td{
+		padding: 10px 15px;
+		font-size: 13px;
+	}
+	.characteristic-info-table thead th{
+		padding: 10px 15px;
+	}
+	.form{
+		padding: 35px 0 0 0;
+	}
+	.product_title h1{
+		font-size: 22px;
+	}
+	.security-list{
+		display: block;
+	}
+	.security-list li{
+		width: 100%;
+		padding: 0 0 20px;
+	}
+	.company{
+		padding: 10px 0 0 0;
+	}
+	.company_inner h2{
+		font-size: 24px;
+	}
+	.billboard_inner p{
+		font-size: 13px;
+	}
+	hr{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.company_inner img{
+		max-width: 260px;
+	}
 	.block_none{
 		margin-right: 0 !important;
 	}
@@ -5284,15 +5358,12 @@ td.colorBlue,
 	.security_inner h2{
 		font-size: 24px;
 		line-height: 29px;
-		margin-top: 10px;
+		margin-top: 25px;
 		margin-bottom: 30px;
 	}
-	.security_plus h3{
-		margin-bottom: 0;
-	}
-	.security_plus p{
+/*	.security_plus p{
 		margin-top: 25px !important;
-	}
+	}*/
 	.billboard-info .price{
 		padding: 0 5px 0 0;
 	}
@@ -5304,6 +5375,7 @@ td.colorBlue,
 	}
 	.color_one, .color_two{
 		width: 100% !important;
+		margin: 0 0 15px !important;
 	}
 	.phone_inner li{
 		display: block;
@@ -5339,7 +5411,7 @@ td.colorBlue,
 	}
 	.block_two{
 		float: none !important;
-		padding-top: 0;
+		padding-top: 0 !important;
 	}
 	.header_inner .button a{
 		margin: 0 auto 20px;

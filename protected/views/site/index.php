@@ -116,18 +116,24 @@
 				</div>
 				<div class="security_plus">
 					<h3>Еще несколько фактов:</h3>
-					<div class="row">
-						<div class="col-sm-6">
-							<?php foreach ($mainfacts1 as $m):?>
-							<p><img src="/assets/img/plus.png" alt="img"><?php echo $m->text;?></p>
-							<?php endforeach; ?>
-						</div> 
-						<div class="col-sm-6">
-							<?php foreach ($mainfacts2 as $m):?>
-							<p><img src="/assets/img/plus.png" alt="img"><?php echo $m->text;?></p>
-							<?php endforeach; ?>
-						</div> 
-					</div>
+					<ul class="security-list">
+						<?php foreach ($mainfacts1 as $m):?>
+						<li>
+							<img src="/assets/img/plus.png" alt="img">
+							<div class="security-text">
+								<p><?php echo $m->text;?></p>
+							</div>
+						</li>
+						<?php endforeach; ?>
+						<?php foreach ($mainfacts2 as $m):?>
+						<li>
+							<img src="/assets/img/plus.png" alt="img">
+							<div class="security-text">
+								<p><?php echo $m->text;?></p>
+							</div>
+						</li>
+						<?php endforeach; ?>
+					</ul>
 				</div>
 			</div>
 		</div>
