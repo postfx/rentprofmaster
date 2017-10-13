@@ -176,7 +176,9 @@
     <div class="container940">
         <div class="row">
             <div class="types-huts-block">
-                <span class="title-h2 types-huts__title">Другие типы опалубки</span>
+				<div class="titlesect">
+					<span class="title-h2 types-huts__title">Другие типы опалубки</span>
+				</div>
                 <div class="types-huts-slider">
 
                 	<?php
@@ -504,7 +506,9 @@
     <div class="container940">
         <div class="row">
             <div class="types-huts-block">
-                <span class="title-h2 types-huts__title">Другие типы бытовок</span>
+				<div class="titlesect">
+					<span class="title-h2 types-huts__title">Другие типы бытовок</span>
+				</div>
                 <div class="types-huts-slider">
 
                 	<?php
@@ -552,7 +556,9 @@
     <div class="container940">
         <div class="row">
             <div class="executed-works-block">
-                <span class="title-h2 executed-works__title">Выполненые работы</span>
+				<div class="titlesect">
+					<span class="title-h2 executed-works__title">Выполненые работы</span>
+				</div>	
                 <div class="executed-works-slider">
                 	<?php foreach ($c->works as $w):?>
                     <div class="executed-works__product">
@@ -664,8 +670,10 @@
     <div class="container940">
         <div class="row">
             <div class="executed-works-block">
-                <span class="title-h2 executed-works__title">Выполненые работы</span>
-                <div class="executed-works-slider">
+				<div class="titlesect">
+					<span class="title-h2 executed-works__title">Выполненые работы</span>
+				</div>
+			   <div class="executed-works-slider">
                 	<?php foreach ($c->works as $w):?>
                     <div class="executed-works__product">
                     	<div class="executed-works__img">

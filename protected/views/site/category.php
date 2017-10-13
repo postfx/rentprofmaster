@@ -69,8 +69,7 @@
 			<div class="gallery-grid">
 				<div class="gallery-item">
 					<div class="block-title">
-						<a href="/<?php echo $c->alias;?>/<?php echo $ch->alias;?>" class="title"><strong class="title"><?php echo $ch->title;?></strong></a>
-						<p class="title-dscr"><?php echo $ch->title2;?></p>
+						<a href="/<?php echo $c->alias;?>/<?php echo $ch->alias;?>" class="title"><strong class="title"><?php echo $ch->title;?></strong></a><p class="title-dscr"><?php echo $ch->title2;?></p>
 					</div>
 					<img src="/uploads/categories/<?php echo $ch->img;?>" alt="image description" title="">
 					<div class="block-btn">
@@ -79,8 +78,7 @@
 					</div>
 					<div class="gallery-hide">
 						<div class="item-dscr">
-							<a href="/<?php echo $c->alias;?>/<?php echo $ch->alias;?>"><strong class="title"><?php echo $ch->title;?></strong></a>
-							<?php echo $ch->descr;?>
+							<a href="/<?php echo $c->alias;?>/<?php echo $ch->alias;?>"><strong class="title"><?php echo $ch->title;?></strong></a><?php echo $ch->descr;?>
 						</div>
 					</div>
 				</div>
@@ -103,8 +101,7 @@
 		<div class="gallery-grid">
 			<div class="gallery-item">
 				<div class="block-title">
-					<a href="<?php echo $c->alias;?>/<?php echo $ca->alias;?>" class="title"><?php echo $ca->title;?></a>
-					<p class="title-dscr"><?php echo $ca->title2;?></p>
+					<a href="<?php echo $c->alias;?>/<?php echo $ca->alias;?>" class="title"><?php echo $ca->title;?></a><p class="title-dscr"><?php echo $ca->title2;?></p>
 				</div>
 				<img src="/uploads/catalog/<?php echo $ca->img;?>" alt="" title="" />
 				<div class="block-btn">
@@ -126,8 +123,7 @@
 				<?php $ca = $catalog[$i]; ?>
 				<div class="gallery-item">
 					<div class="block-title">
-						<a href="<?php echo $c->alias;?>/<?php echo $ca->alias;?>" class="title"><span class="title"><?php echo $ca->title;?></span></a>
-						<p class="title-dscr"><?php echo $ca->title2;?></p>
+						<a href="<?php echo $c->alias;?>/<?php echo $ca->alias;?>" class="title"><span class="title"><?php echo $ca->title;?></span></a><p class="title-dscr"><?php echo $ca->title2;?></p>
 					</div>
 					<img src="/uploads/catalog/<?php echo $ca->img;?>" alt="" title="" />
 					<div class="block-btn">
